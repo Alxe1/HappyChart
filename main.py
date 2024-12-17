@@ -1,0 +1,73 @@
+import os
+import sys
+import datetime
+from cryptography.fernet import Fernet
+
+import pandas as pd
+from PySide6.QtGui import QIcon, QGuiApplication
+from PySide6.QtWidgets import QMainWindow, QApplication, QFrame
+from PySide6.QtCore import Qt
+import qdarktheme
+import machineid
+
+from charts.area_chart import AreaChart
+from charts.autocorrelation_chart import AutoCorrelationChart
+from charts.bar_chart import BarChart
+from charts.line_chart import LineChart
+from charts.box_chart import BoxChart
+from charts.chart_layers.chart_layer import ChartLayer
+from charts.errorbar_chart import ErrorBarChart
+from charts.event_chart import EventChart
+from charts.hbar_chart import HBarChart
+from charts.heatmap_chart import HeatMapChart
+from charts.histgram import Histgram
+from charts.pie_chart import PieChart
+from charts.pie_chart_with_bar import PieChartWithBar
+from charts.radar_chart import RadarChart
+from charts.scatter_chart import ScatterChart
+from charts.stairs_chart import StairsChart
+from charts.stem_chart import StemChart
+from charts.violin_chart import ViolinChart
+from charts.wordcloud_chart import WordcloudChart
+from hellokitty import generate_mid, generate_code
+from widgets.chart_tool_widgets.area_chart_tool import AreaChartToolFrame
+from widgets.chart_tool_widgets.autocorrelation_chart_tool import AutoCorrelationChartToolFrame
+from widgets.chart_tool_widgets.bar_chart_tool import BarChartToolFrame
+from widgets.chart_tool_widgets.box_chart_tool import BoxChartToolFrame
+from widgets.chart_tool_widgets.errorbar_chart_tool import ErrorBarChartToolFrame
+from widgets.chart_tool_widgets.event_chart_tool import EventChartToolFrame
+from widgets.chart_tool_widgets.hbar_chart_tool import HBarChartToolFrame
+from widgets.chart_tool_widgets.heatmap_chart_tool import HeatMapChartToolFrame
+from widgets.chart_tool_widgets.histgram_chart_tool import HistgramChartToolFrame
+from widgets.chart_tool_widgets.layers.annotation_layer_tool import AnnotationLayerToolFrame
+from widgets.chart_tool_widgets.layers.cdf_layer_tool import CDFLayerToolFrame
+from widgets.chart_tool_widgets.layers.density_layer_tool import DensityLayerToolFrame
+from widgets.chart_tool_widgets.layers.errorbar_layer_tool import ErrorbarLayerToolFrame
+from widgets.chart_tool_widgets.layers.fill_between_layer_tool import FillBetweenLayerToolFrame
+from widgets.chart_tool_widgets.layers.line_layer_tool import LineLayerToolFrame
+from widgets.chart_tool_widgets.layers.regression_layer_tool import RegressionLayerToolFrame
+from widgets.chart_tool_widgets.layers.scatter_layer_tool import ScatterLayerToolFrame
+from widgets.chart_tool_widgets.layers.span_layer_tool import SpanLayerToolFrame
+from widgets.chart_tool_widgets.layers.stairs_layer_tool import StairsLayerToolFrame
+from widgets.chart_tool_widgets.layers.text_layer_tool import TextLayerToolFrame
+from widgets.chart_tool_widgets.layers.vhline_layer_tool import VHLineLayerToolFrame
+from widgets.chart_tool_widgets.line_chart_tool import LineChartToolFrame
+from widgets.chart_tool_widgets.pie_chart_tool import PieChartToolFrame
+from widgets.chart_tool_widgets.pie_chart_with_bar_tool import PieChartWithBarToolFrame
+from widgets.chart_tool_widgets.radar_chart_tool import RadarChartToolFrame
+from widgets.chart_tool_widgets.scatter_chart_tool import ScatterChartToolFrame
+from widgets.chart_tool_widgets.stairs_chart_tool import StairsChartToolFrame
+from widgets.chart_tool_widgets.stem_chart_tool import StemChartToolFrame
+from widgets.chart_tool_widgets.violin_chart_tool import ViolinChartToolFrame
+from widgets.chart_tool_widgets.wordcloud_chart_tool import WordcloudChartToolFrame
+from widgets.inherited_widgets.custom_dialog_widget import CustomDialog
+from widgets.other_widgets.activation_widget import ActivationWidget
+from widgets.ui_widgets.ui_mainWidget import Ui_MainWindow
+from widgets.toolbar_action_widget import ToolbarActionWidget
+
+
+from myapp import main
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>314</width>
+    <height>534</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>XDataSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="x_series_combo"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>YDataSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="y_series_combo"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>UseVlines</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QCheckBox" name="use_vline_check">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>VLineColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QToolButton" name="vline_color_btn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>VLineStyle</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="vline_style_combo">
+       <item>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>--</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>-.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>:</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>VLineWidth</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QDoubleSpinBox" name="vline_width_spin">
+       <property name="minimum">
+        <double>0.010000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>100.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>2.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Normalization</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QCheckBox" name="norm_check">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>MaxLags</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QSpinBox" name="max_lag_spin">
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="value">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>HLineColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QToolButton" name="hline_color_btn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>HLineStyle</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QComboBox" name="hline_style_combo">
+       <item>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>--</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>-.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>:</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>HLineWidth</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QDoubleSpinBox" name="hline_width_spin">
+       <property name="minimum">
+        <double>0.010000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>100.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>2.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>322</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_30">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>selectedChart</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="bar_selector_combo">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>grouped</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>stacked</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>proportion</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>XDataSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="x_series_combo"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="y_series_label_2">
+       <property name="text">
+        <string>YDataSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="y_series_combo"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>DataLabelSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="data_label_line"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_18">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>ColorSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QToolButton" name="base_chart_color_series_btn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="base_chart_color_series_line"/>
+     </item>
+     <item row="14" column="1">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="6" column="1">
+      <widget class="QDoubleSpinBox" name="base_chart_interval_spin">
+       <property name="minimum">
+        <double>0.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>0.500000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.010000000000000</double>
+       </property>
+       <property name="value">
+        <double>0.350000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>Interval</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="y_err_series_line"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>ErrorDataSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QToolButton" name="err_bar_color_btn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>ErrorBarColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QCheckBox" name="bar_value_label_check">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>AddValueLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLineEdit" name="bar_value_label_line">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_26">
+       <property name="text">
+        <string>ValueLabelSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QDoubleSpinBox" name="bar_value_label_interval_spin">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="decimals">
+        <number>2</number>
+       </property>
+       <property name="maximum">
+        <double>100.000000000000000</double>
+       </property>
+       <property name="value">
+        <double>3.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_28">
+       <property name="text">
+        <string>ValueLabelInterval</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QToolButton" name="bar_value_label_color_btn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_29">
+       <property name="text">
+        <string>ValueLabelColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="1">
+      <widget class="QSpinBox" name="bar_value_label_size_spin">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="value">
+        <number>9</number>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLabel" name="label_27">
+       <property name="text">
+        <string>ValueLabelSize</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,3415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1362</width>
+    <height>823</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HappyCharts</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">menubar{
+	margin-right: 20px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_1">
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_10" stretch="2,1">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="8,1">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0">
+              <property name="spacing">
+               <number>2</number>
+              </property>
+              <item>
+               <widget class="QScrollArea" name="chartScrollArea">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Plain</enum>
+                </property>
+                <property name="widgetResizable">
+                 <bool>false</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+                <widget class="QWidget" name="chartScrollAreaWidgetContents">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>648</width>
+                   <height>499</height>
+                  </rect>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox">
+              <property name="minimumSize">
+               <size>
+                <width>300</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QGroupBox#groupBox{
+border: 1px solid gray;
+}</string>
+              </property>
+              <property name="title">
+               <string/>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_14">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <property name="topMargin">
+                  <number>6</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="add_layer_btn">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="layoutDirection">
+                    <enum>Qt::LayoutDirection::LeftToRight</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton#add_layer_btn{
+margin-left: 15px;
+margin-right: 21px;
+padding: 2px;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Add Layer</string>
+                   </property>
+                   <property name="flat">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_3">
+                   <property name="frameShape">
+                    <enum>QFrame::Shape::NoFrame</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Shadow::Plain</enum>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_2">
+                    <property name="leftMargin">
+                     <number>16</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>16</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item row="0" column="0">
+                     <widget class="QLabel" name="chart_type_label">
+                      <property name="minimumSize">
+                       <size>
+                        <width>100</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>76</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>BaseChartType</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QComboBox" name="chart_type_combo">
+                      <property name="styleSheet">
+                       <string notr="true">margin-right: 6px;
+margin-left: 2px;</string>
+                      </property>
+                      <item>
+                       <property name="text">
+                        <string>BarChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>LineChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>HBarChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>ScatterChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>StackedAreaChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>StemChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>RadarChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>Histgram</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>PieChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>PieChartWithBar</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>BoxChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>ErrorChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>ViolinChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>HeatmapChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>EventChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>AutoCorrelationChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>StairsChart</string>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
+                        <string>WordcloudChart</string>
+                       </property>
+                      </item>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="Line" name="line">
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Horizontal</enum>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QStackedWidget" name="stackedWidget_2">
+                   <property name="currentIndex">
+                    <number>12</number>
+                   </property>
+                   <widget class="QWidget" name="bar_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_12">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="bar_chart_scoll_area">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="lineWidth">
+                        <number>1</number>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="bar_chart_scoll_area_content">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_14"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="line_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_2">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="line_chart_scoll_area">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="line_chart_scoll_area_content">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_3"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="hbar_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_7">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_15"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="scatter_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_8">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_2">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_16"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="area_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_13">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_3">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_17"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="stem_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_24">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_13">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_13">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_18"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="radar_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_22">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_11">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_11">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_19"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="histgram_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_20">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_9">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_9">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_20"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="pie_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_21">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_10">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_10">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_21"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="box_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_15">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_4">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_4">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_22"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="errorbar_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_17">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_6">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_6">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_23"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="violin_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_25">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_14">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_14">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_24"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="heatmap_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_19">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_8">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_8">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>296</width>
+                          <height>431</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_25"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="event_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_18">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_7">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_7">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_26"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="auto_correlation_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_16">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_5">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_5">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_27"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="stairs_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_23">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_12">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_12">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_28"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="wordcloud_chart_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_26">
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_15">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_15">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_29"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="pie_chart_with_bar_layer">
+                    <layout class="QVBoxLayout" name="verticalLayout_27">
+                     <item>
+                      <widget class="QScrollArea" name="scrollArea_16">
+                       <property name="frameShape">
+                        <enum>QFrame::Shape::NoFrame</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Shadow::Plain</enum>
+                       </property>
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="scrollAreaWidgetContents_16">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>100</width>
+                          <height>30</height>
+                         </rect>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_30"/>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QTableWidget" name="table"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <property name="leftMargin">
+         <number>2</number>
+        </property>
+        <property name="topMargin">
+         <number>2</number>
+        </property>
+        <property name="rightMargin">
+         <number>2</number>
+        </property>
+        <property name="bottomMargin">
+         <number>2</number>
+        </property>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="minimumSize">
+    <size>
+     <width>330</width>
+     <height>156</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>330</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#dockWidgetContents{
+border: 1px solid gray;
+}</string>
+   </property>
+   <property name="windowTitle">
+    <string>Chart Tools</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="leftMargin">
+      <number>4</number>
+     </property>
+     <property name="topMargin">
+      <number>4</number>
+     </property>
+     <property name="rightMargin">
+      <number>4</number>
+     </property>
+     <property name="bottomMargin">
+      <number>4</number>
+     </property>
+     <item>
+      <widget class="QScrollArea" name="toolsScrollArea">
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="toolsScrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>300</width>
+          <height>1987</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>4</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>4</number>
+         </property>
+         <item>
+          <widget class="QGroupBox" name="data_layout_group_box">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="title">
+            <string>Canvas Settings</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QFrame" name="data_layout_1">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0,0,0,0,0,0">
+               <item row="5" column="0">
+                <widget class="QLabel" name="show_grid_label">
+                 <property name="text">
+                  <string>ShowCanvasGrid</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="10" column="0">
+                <widget class="QLabel" name="label">
+                 <property name="text">
+                  <string>ShowX/YGridOnly</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="1">
+                <widget class="QComboBox" name="grid_line_style_combo">
+                 <item>
+                  <property name="text">
+                   <string>-</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>--</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>-.</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>:</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="chart_bg_color_label">
+                 <property name="text">
+                  <string>ChartBgColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QCheckBox" name="canvas_grid_check_box">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="1">
+                <widget class="QDoubleSpinBox" name="grid_line_width_spin">
+                 <property name="maximum">
+                  <double>100.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.100000000000000</double>
+                 </property>
+                 <property name="value">
+                  <double>1.000000000000000</double>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="1">
+                <widget class="QSlider" name="grid_transparent_slider">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="maximum">
+                  <number>100</number>
+                 </property>
+                 <property name="value">
+                  <number>50</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QToolButton" name="canvas_bg_color_btn">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <layout class="QVBoxLayout" name="verticalLayout_28" stretch="1,2">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                   <item>
+                    <widget class="QLabel" name="label_11">
+                     <property name="minimumSize">
+                      <size>
+                       <width>38</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>Width</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QDoubleSpinBox" name="canvas_width_spin">
+                     <property name="minimum">
+                      <double>1.000000000000000</double>
+                     </property>
+                     <property name="maximum">
+                      <double>1000.000000000000000</double>
+                     </property>
+                     <property name="singleStep">
+                      <double>0.010000000000000</double>
+                     </property>
+                     <property name="value">
+                      <double>6.000000000000000</double>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_23">
+                     <property name="text">
+                      <string>inch</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_5">
+                   <item>
+                    <widget class="QLabel" name="label_24">
+                     <property name="minimumSize">
+                      <size>
+                       <width>38</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="text">
+                      <string>Height</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QDoubleSpinBox" name="canvas_height_spin">
+                     <property name="minimum">
+                      <double>1.000000000000000</double>
+                     </property>
+                     <property name="maximum">
+                      <double>1000.000000000000000</double>
+                     </property>
+                     <property name="singleStep">
+                      <double>0.010000000000000</double>
+                     </property>
+                     <property name="value">
+                      <double>4.000000000000000</double>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_25">
+                     <property name="text">
+                      <string>inch</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item row="10" column="1">
+                <widget class="QSlider" name="show_xy_grid_slider">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="minimum">
+                  <number>-1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>1</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Horizontal</enum>
+                 </property>
+                 <property name="tickPosition">
+                  <enum>QSlider::TickPosition::TicksAbove</enum>
+                 </property>
+                 <property name="tickInterval">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_9">
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>CanvasSize</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="0">
+                <widget class="QLabel" name="label_22">
+                 <property name="text">
+                  <string>GridLineStyle</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QToolButton" name="chart_bg_color_btn">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="canvas_bg_color_label">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>CanvasBgColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="0">
+                <widget class="QLabel" name="grid_transparent_label">
+                 <property name="text">
+                  <string>GridTransparency</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="0">
+                <widget class="QLabel" name="label_13">
+                 <property name="text">
+                  <string>GridColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="1">
+                <widget class="QToolButton" name="grid_color_btn">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="0">
+                <widget class="QLabel" name="label_21">
+                 <property name="text">
+                  <string>GridLineWidth</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_26">
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>DPI</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QSpinBox" name="dpi_spin">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="maximum">
+                  <number>1000</number>
+                 </property>
+                 <property name="value">
+                  <number>100</number>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="base_setting_group_box">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="title">
+            <string>Base Settings</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QFrame" name="base_setting_x">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5">
+               <item row="7" column="1">
+                <widget class="QFrame" name="frame_5">
+                 <property name="frameShape">
+                  <enum>QFrame::Shape::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Shadow::Raised</enum>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_12">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QSpinBox" name="bs_x_tick_range_min_spin">
+                    <property name="minimum">
+                     <number>-1000000</number>
+                    </property>
+                    <property name="maximum">
+                     <number>1000000</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="label_15">
+                    <property name="text">
+                     <string>——</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignmentFlag::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QSpinBox" name="bs_x_tick_range_max_spin">
+                    <property name="maximum">
+                     <number>1000000</number>
+                    </property>
+                    <property name="value">
+                     <number>0</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QCheckBox" name="bs_x_bold_check">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="0">
+                <widget class="QLabel" name="label_14">
+                 <property name="text">
+                  <string>TicksRange</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="1">
+                <widget class="QSpinBox" name="bs_x_tick_size_spin">
+                 <property name="value">
+                  <number>3</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="11" column="0">
+                <widget class="QLabel" name="label_10">
+                 <property name="text">
+                  <string>TicksLabelSize</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="1">
+                <widget class="QToolButton" name="bs_x_tick_label_color_btn">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="16" column="0">
+                <widget class="QLabel" name="bs_x_minor_tick_interval_label">
+                 <property name="text">
+                  <string>MinorTicksInterval</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="15" column="1">
+                <widget class="QCheckBox" name="bs_x_minor_tick_check">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="0">
+                <widget class="QLabel" name="bs_x_tick_label_color_label">
+                 <property name="text">
+                  <string>TicksLabelColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="11" column="1">
+                <widget class="QSpinBox" name="bs_x_tick_label_size_spin">
+                 <property name="maximum">
+                  <number>100</number>
+                 </property>
+                 <property name="value">
+                  <number>9</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="16" column="1">
+                <widget class="QDoubleSpinBox" name="bs_x_minor_tick_interval_spin">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="maximum">
+                  <double>1000000.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.010000000000000</double>
+                 </property>
+                 <property name="value">
+                  <double>1.000000000000000</double>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLabel" name="bs_x_bold">
+                 <property name="text">
+                  <string>Bold</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="bs_x_enable_check">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="13" column="0">
+                <widget class="QLabel" name="bs_x_tick_value_series_label">
+                 <property name="text">
+                  <string>TicksValueSeries</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="15" column="0">
+                <widget class="QLabel" name="bs_x_minor_tick_label">
+                 <property name="text">
+                  <string>MinorTicks</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="bs_x_title_line_edit"/>
+               </item>
+               <item row="17" column="1">
+                <widget class="QDial" name="bs_x_slope_dial">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="maximum">
+                  <number>360</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="1">
+                <widget class="QComboBox" name="bs_x_tick_combo">
+                 <item>
+                  <property name="text">
+                   <string>out</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>in</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>inout</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="bs_x_title">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Label</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="bs_x_enable">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Enabled</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="0">
+                <widget class="QLabel" name="bs_x_tick_color_label">
+                 <property name="text">
+                  <string>TicksColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QSpinBox" name="bs_x_label_size_spin">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="value">
+                  <number>9</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="bs_x_label_size">
+                 <property name="text">
+                  <string>LabelSize</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="0">
+                <widget class="QLabel" name="label_18">
+                 <property name="text">
+                  <string>TicksSize</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="17" column="0">
+                <widget class="QLabel" name="bs_x_slope">
+                 <property name="text">
+                  <string>TicksLabelAngle</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="14" column="1">
+                <widget class="QLineEdit" name="bs_x_tick_label_series_line"/>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="bs_x_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>X Axis Settings</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="0">
+                <widget class="QLabel" name="bs_x_tick">
+                 <property name="text">
+                  <string>TicksDirection</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="14" column="0">
+                <widget class="QLabel" name="bs_x_tick_label_series_label">
+                 <property name="text">
+                  <string>TicksLabelSeries</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QToolButton" name="bs_x_label_color_btn">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="1">
+                <widget class="QToolButton" name="bs_x_tick_color_btn">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="13" column="1">
+                <widget class="QLineEdit" name="bs_x_tick_value_series_line"/>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="bs_x_label_color">
+                 <property name="minimumSize">
+                  <size>
+                   <width>76</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>LabelColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="10" column="0">
+                <widget class="QLabel" name="label_27">
+                 <property name="text">
+                  <string>ShowTopTicks</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="10" column="1">
+                <widget class="QCheckBox" name="bs_x_show_top_ticks_check">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="base_setting_y">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_6">
+               <item row="7" column="0">
+                <widget class="QLabel" name="label_16">
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>TicksRange</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="0">
+                <widget class="QLabel" name="bs_y_tick_color_label">
+                 <property name="text">
+                  <string>TicksColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="13" column="2">
+                <widget class="QLineEdit" name="bs_y_tick_value_series_line"/>
+               </item>
+               <item row="6" column="2">
+                <widget class="QComboBox" name="bs_y_tick_combo">
+                 <item>
+                  <property name="text">
+                   <string>out</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>in</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>inout</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="bs_y_label_color">
+                 <property name="text">
+                  <string>LabelColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="17" column="0">
+                <widget class="QLabel" name="bs_y_slope">
+                 <property name="text">
+                  <string>TicksLabelAngle</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="2">
+                <widget class="QToolButton" name="bs_y_tick_color_btn">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="bs_y_enable">
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Enabled</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="0">
+                <widget class="QLabel" name="bs_y_tick">
+                 <property name="text">
+                  <string>TicksDirection</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QCheckBox" name="bs_y_enable_check">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="2">
+                <widget class="QFrame" name="frame_6">
+                 <property name="frameShape">
+                  <enum>QFrame::Shape::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Shadow::Raised</enum>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_13">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QSpinBox" name="bs_y_tick_range_min_spin">
+                    <property name="minimum">
+                     <number>-1000000</number>
+                    </property>
+                    <property name="maximum">
+                     <number>1000000</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="label_17">
+                    <property name="text">
+                     <string>——</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignmentFlag::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QSpinBox" name="bs_y_tick_range_max_spin">
+                    <property name="maximum">
+                     <number>1000000</number>
+                    </property>
+                    <property name="value">
+                     <number>0</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="2" column="2">
+                <widget class="QLineEdit" name="bs_y_title_edit_line"/>
+               </item>
+               <item row="11" column="2">
+                <widget class="QSpinBox" name="bs_y_tick_label_size_spin">
+                 <property name="value">
+                  <number>9</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="14" column="2">
+                <widget class="QLineEdit" name="bs_y_tick_label_series_line"/>
+               </item>
+               <item row="12" column="2">
+                <widget class="QToolButton" name="bs_y_tick_label_color_btn">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="0">
+                <widget class="QLabel" name="label_19">
+                 <property name="text">
+                  <string>TicksSize</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="2">
+                <widget class="QCheckBox" name="bs_y_bold_check">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="13" column="0">
+                <widget class="QLabel" name="bs_y_tick_value_series_label">
+                 <property name="text">
+                  <string>TicksValueSeries</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="15" column="0">
+                <widget class="QLabel" name="bs_y_minor_tick_label">
+                 <property name="text">
+                  <string>MinorTicks</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="11" column="0">
+                <widget class="QLabel" name="label_12">
+                 <property name="text">
+                  <string>TicksLabelSize</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="17" column="2">
+                <widget class="QDial" name="bs_y_slope_dial">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="maximum">
+                  <number>360</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="16" column="0">
+                <widget class="QLabel" name="bs_y_minor_tick_interval_label">
+                 <property name="text">
+                  <string>MinorTicksInterval</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="2">
+                <widget class="QSpinBox" name="bs_y_label_size_spin">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="value">
+                  <number>9</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="bs_y_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Y Axis Settings</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLabel" name="bs_y_bold">
+                 <property name="minimumSize">
+                  <size>
+                   <width>76</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Bold</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="bs_y_label_size">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>LabelSize</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="bs_y_title">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Label</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="2">
+                <widget class="QToolButton" name="bs_y_label_color_btn">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="2">
+                <widget class="QSpinBox" name="bs_y_tick_size_spin">
+                 <property name="value">
+                  <number>3</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="0">
+                <widget class="QLabel" name="bs_y_tick_label_color_label">
+                 <property name="text">
+                  <string>TicksLabelColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="15" column="2">
+                <widget class="QCheckBox" name="bs_y_minor_tick_check">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="14" column="0">
+                <widget class="QLabel" name="bs_y_tick_label_series_label">
+                 <property name="text">
+                  <string>TicksLabelSeries</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="16" column="2">
+                <widget class="QDoubleSpinBox" name="bs_y_minor_tick_interval_spin">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="maximum">
+                  <double>1000000.000000000000000</double>
+                 </property>
+                 <property name="singleStep">
+                  <double>0.010000000000000</double>
+                 </property>
+                 <property name="value">
+                  <double>1.000000000000000</double>
+                 </property>
+                </widget>
+               </item>
+               <item row="10" column="0">
+                <widget class="QLabel" name="label_28">
+                 <property name="text">
+                  <string>ShowRightTicks</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="10" column="2">
+                <widget class="QCheckBox" name="bs_y_show_right_ticks_check">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="base_setting_title">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_7">
+               <item row="0" column="0">
+                <widget class="QLabel" name="bs_t_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Title Settings</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="bs_t_title">
+                 <property name="minimumSize">
+                  <size>
+                   <width>110</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="baseSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">margin-right: 16px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Title</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="bs_t_bold">
+                 <property name="text">
+                  <string>Bold</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="bs_t_title_size">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>TitleSize</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLabel" name="bs_t_pos">
+                 <property name="text">
+                  <string>TitlePosition</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="bs_t_title_color">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>TitleColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QComboBox" name="bs_t_pos_combo">
+                 <item>
+                  <property name="text">
+                   <string>center</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>left</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>right</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QSpinBox" name="bs_t_title_size_spin">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="value">
+                  <number>9</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="bs_t_title_edit_line"/>
+               </item>
+               <item row="3" column="1">
+                <widget class="QToolButton" name="bs_t_title_color_btn">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QCheckBox" name="bs_t_bold_check">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="base_setting_legend">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_8">
+               <item row="10" column="1">
+                <widget class="QToolButton" name="bs_l_legend_frame_color_btn">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="1">
+                <widget class="QCheckBox" name="bs_l_legend_frame_check">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QComboBox" name="bs_l_pos_combo">
+                 <item>
+                  <property name="text">
+                   <string>best</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>upper right</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>upper left</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>lower left</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>lower right</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>right</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>center left</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>center right</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>lower center</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>upper center</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>center</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="legend_title_label">
+                 <property name="text">
+                  <string>LegendTitle</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="1">
+                <widget class="QSpinBox" name="bs_l_legend_col_spin">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QSpinBox" name="bs_l_legend_size_spin">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="value">
+                  <number>9</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="label_8">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>LegendTitleSize</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="0">
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string>LabelColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="10" column="0">
+                <widget class="QLabel" name="label_6">
+                 <property name="text">
+                  <string>LegendFrameColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="1">
+                <widget class="QSlider" name="bs_l_legend_transparent_slider">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="maximum">
+                  <number>100</number>
+                 </property>
+                 <property name="value">
+                  <number>100</number>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="1">
+                <widget class="QToolButton" name="bs_l_legend_text_color_btn">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QSpinBox" name="bs_l_legend_text_size_spin">
+                 <property name="minimum">
+                  <number>1</number>
+                 </property>
+                 <property name="value">
+                  <number>9</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="0">
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>LegendFrame</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="bs_l_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Legend Settings</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="bs_l_legend_size">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>LegendTextSize</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="11" column="1">
+                <widget class="QToolButton" name="bs_l_legend_bg_color_btn">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="bs_l_legend_title_line"/>
+               </item>
+               <item row="6" column="0">
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>Legend Columns</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="11" column="0">
+                <widget class="QLabel" name="label_3">
+                 <property name="text">
+                  <string>LegendBgColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLabel" name="bs_l_pos">
+                 <property name="minimumSize">
+                  <size>
+                   <width>76</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>LegendPosition</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="0">
+                <widget class="QLabel" name="label_7">
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>FrameTransparency</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_20">
+                 <property name="text">
+                  <string>Enabled</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="bs_l_legend_enabled_check">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="bs_setting_other">
+              <property name="frameShape">
+               <enum>QFrame::Shape::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Shadow::Raised</enum>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_9">
+               <item row="1" column="1">
+                <widget class="QComboBox" name="bs_o_border_combo">
+                 <property name="minimumSize">
+                  <size>
+                   <width>142</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>standard</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>left bottom</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>top right</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>top</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>bottom</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>left</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>right</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>none</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="bs_o_border">
+                 <property name="minimumSize">
+                  <size>
+                   <width>110</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>FrameStyle</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="bs_o_label">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Other Settings</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="bs_o_border_color_label">
+                 <property name="text">
+                  <string>FrameColor</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QToolButton" name="bs_o_border_color_btn">
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>Base ToolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionImportData"/>
+   <addaction name="actionExportData"/>
+   <addaction name="actionExportImage"/>
+   <addaction name="actionHelp"/>
+  </widget>
+  <widget class="QToolBar" name="chart_layer_toolbar">
+   <property name="windowTitle">
+    <string>Chart Layer ToolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionScatterLayer"/>
+   <addaction name="actionLineLayer"/>
+   <addaction name="actionStairsLayer"/>
+   <addaction name="actionErrorLayer"/>
+   <addaction name="actionDensityLayer"/>
+   <addaction name="actionCDFLayer"/>
+   <addaction name="actionRegressionLayer"/>
+   <addaction name="actionFillBetweenLayer"/>
+   <addaction name="actionSpanLayer"/>
+   <addaction name="actionVHLineLayer"/>
+   <addaction name="actionAnnotationLayer"/>
+   <addaction name="actionTextLayer"/>
+  </widget>
+  <widget class="QToolBar" name="chart_toolbar">
+   <property name="windowTitle">
+    <string>Chart ToolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionBarChart"/>
+   <addaction name="actionLineChart"/>
+   <addaction name="actionHBarChart"/>
+   <addaction name="actionScatterChart"/>
+   <addaction name="actionStackedAreaChart"/>
+   <addaction name="actionStemChart"/>
+   <addaction name="actionRadarChart"/>
+   <addaction name="actionHistgram"/>
+   <addaction name="actionPieChart"/>
+   <addaction name="actionPieChartWithBar"/>
+   <addaction name="actionBoxChart"/>
+   <addaction name="actionErrorChart"/>
+   <addaction name="actionViolinChart"/>
+   <addaction name="actionHeatmapChart"/>
+   <addaction name="actionEventChart"/>
+   <addaction name="actionAutoCorrelationChart"/>
+   <addaction name="actionStairsChart"/>
+   <addaction name="actionWordcloudChart"/>
+  </widget>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/icon/icons/xinjian.png</normaloff>:/icon/icons/xinjian.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;New&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/icon/icons/folderOpen.png</normaloff>:/icon/icons/folderOpen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Open&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/icon/icons/baocun.png</normaloff>:/icon/icons/baocun.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Save&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionImportData">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/icon/icons/daorushuju.png</normaloff>:/icon/icons/daorushuju.png</iconset>
+   </property>
+   <property name="text">
+    <string>Import Data</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Import Data&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionExportData">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/icon/icons/daorushuju1.png</normaloff>:/icon/icons/daorushuju1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Export Data</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Export Data&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionExportImage">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/icon/icons/daochutupian.png</normaloff>:/icon/icons/daochutupian.png</iconset>
+   </property>
+   <property name="text">
+    <string>Export Image</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Export Image&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/icon/icons/bangzhuwendangwenjian.png</normaloff>:/icon/icons/bangzhuwendangwenjian.png</iconset>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Help&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>6</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionLineLayer">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/line_layer.png</normaloff>:/images/images/line_layer.png</iconset>
+   </property>
+   <property name="text">
+    <string>LineLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Line Layer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAnnotationLayer">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/annotation_layer.png</normaloff>:/images/images/annotation_layer.png</iconset>
+   </property>
+   <property name="text">
+    <string>AnnotationLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Annotation Layer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionCDFLayer">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/cdf_layer.png</normaloff>:/images/images/cdf_layer.png</iconset>
+   </property>
+   <property name="text">
+    <string>CDFLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;CDF Layer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDensityLayer">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/density_layer.png</normaloff>:/images/images/density_layer.png</iconset>
+   </property>
+   <property name="text">
+    <string>DensityLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Density Layer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionErrorLayer">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/error_layer.png</normaloff>:/images/images/error_layer.png</iconset>
+   </property>
+   <property name="text">
+    <string>ErrorLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Error Layer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionFillBetweenLayer">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/fill_between_layer.png</normaloff>:/images/images/fill_between_layer.png</iconset>
+   </property>
+   <property name="text">
+    <string>FillBetweenLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;FillBetween Layer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionRegressionLayer">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/regression_layer.png</normaloff>:/images/images/regression_layer.png</iconset>
+   </property>
+   <property name="text">
+    <string>RegressionLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Regression Layer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionScatterLayer">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/scatter_layer.png</normaloff>:/images/images/scatter_layer.png</iconset>
+   </property>
+   <property name="text">
+    <string>ScatterLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Scatter Layer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSpanLayer">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/span_layer.png</normaloff>:/images/images/span_layer.png</iconset>
+   </property>
+   <property name="text">
+    <string>SpanLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Span Layer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStairsLayer">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/stairs_layer.png</normaloff>:/images/images/stairs_layer.png</iconset>
+   </property>
+   <property name="text">
+    <string>StairsLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Stairs Layer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionTextLayer">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/text_layer.png</normaloff>:/images/images/text_layer.png</iconset>
+   </property>
+   <property name="text">
+    <string>TextLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Text Layer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionVHLineLayer">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/vhline_layer.png</normaloff>:/images/images/vhline_layer.png</iconset>
+   </property>
+   <property name="text">
+    <string>VHLineLayer</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;VHLine Layer&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBarChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/bar.png</normaloff>:/images/images/bar.png</iconset>
+   </property>
+   <property name="text">
+    <string>BarChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Bar Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionLineChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/line.png</normaloff>:/images/images/line.png</iconset>
+   </property>
+   <property name="text">
+    <string>LineChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Line Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionHBarChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/hbar.png</normaloff>:/images/images/hbar.png</iconset>
+   </property>
+   <property name="text">
+    <string>HBarChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;HBar Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionScatterChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/scatter.png</normaloff>:/images/images/scatter.png</iconset>
+   </property>
+   <property name="text">
+    <string>ScatterChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Scatter Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStackedAreaChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/stackarea.png</normaloff>:/images/images/stackarea.png</iconset>
+   </property>
+   <property name="text">
+    <string>StackedAreaChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Stacked Area Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStemChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/stem.png</normaloff>:/images/images/stem.png</iconset>
+   </property>
+   <property name="text">
+    <string>StemChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Stem Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionRadarChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/radar.png</normaloff>:/images/images/radar.png</iconset>
+   </property>
+   <property name="text">
+    <string>RadarChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Radar Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionHistgram">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/hist.png</normaloff>:/images/images/hist.png</iconset>
+   </property>
+   <property name="text">
+    <string>Histgram</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Histgram&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionPieChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/pie.png</normaloff>:/images/images/pie.png</iconset>
+   </property>
+   <property name="text">
+    <string>PieChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Pie Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionPieChartWithBar">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/piewithbar.png</normaloff>:/images/images/piewithbar.png</iconset>
+   </property>
+   <property name="text">
+    <string>PieChartWithBar</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Pie Chart With Bar&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionBoxChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/box.png</normaloff>:/images/images/box.png</iconset>
+   </property>
+   <property name="text">
+    <string>BoxChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Box Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionErrorChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/error.png</normaloff>:/images/images/error.png</iconset>
+   </property>
+   <property name="text">
+    <string>ErrorChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Error Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionViolinChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/violin.png</normaloff>:/images/images/violin.png</iconset>
+   </property>
+   <property name="text">
+    <string>ViolinChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Violin Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionHeatmapChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/heatmap.png</normaloff>:/images/images/heatmap.png</iconset>
+   </property>
+   <property name="text">
+    <string>HeatmapChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Heatmap Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionEventChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/event.png</normaloff>:/images/images/event.png</iconset>
+   </property>
+   <property name="text">
+    <string>EventChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Event Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAutoCorrelationChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/autocorrelation.png</normaloff>:/images/images/autocorrelation.png</iconset>
+   </property>
+   <property name="text">
+    <string>AutoCorrelationChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Auto Correlation Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionStairsChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/stairs.png</normaloff>:/images/images/stairs.png</iconset>
+   </property>
+   <property name="text">
+    <string>StairsChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Stairs Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionWordcloudChart">
+   <property name="icon">
+    <iconset resource="../resources/resources.qrc">
+     <normaloff>:/images/images/word.png</normaloff>:/images/images/word.png</iconset>
+   </property>
+   <property name="text">
+    <string>WordcloudChart</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Wordcloud Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resources/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

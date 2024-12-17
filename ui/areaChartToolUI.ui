@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>333</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="x_series_label">
+       <property name="text">
+        <string>XDataSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="x_series_combo"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="y_series_label">
+       <property name="text">
+        <string>YDataSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="y_series_combo"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>DataLabelSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="data_label_line"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>ColorSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QToolButton" name="area_color_series_btn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="area_color_series_line"/>
+     </item>
+     <item row="5" column="1">
+      <widget class="QComboBox" name="area_baseline_combo">
+       <item>
+        <property name="text">
+         <string>zero</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>sym</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>wiggle</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>weighted_wiggle</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>BaseLine</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="6" column="1">
+      <widget class="QSlider" name="area_transparent_slider">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="value">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Transparency</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

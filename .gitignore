@@ -1,0 +1,11 @@
+venv/
+.idea/
+._pytest_cache/
+__pycache__/
+build/
+dist/
+.eggs/
+HappyChart.spec
+./package_docs/
+happyChart.spec
+.pytest_cache/

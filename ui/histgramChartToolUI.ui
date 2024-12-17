@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>584</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>XDataSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="x_series_combo"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="y_series_label">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>YDataSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="y_series_combo">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>DataLabelSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="data_label_line">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>BinNumber</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QSpinBox" name="bin_num_spin">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>1000000</number>
+       </property>
+       <property name="value">
+        <number>10</number>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>BinRange</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QFrame" name="frame">
+       <property name="maximumSize">
+        <size>
+         <width>146</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QSpinBox" name="bin_range_min_spin">
+          <property name="minimum">
+           <number>-1000000</number>
+          </property>
+          <property name="maximum">
+           <number>1000000</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>——</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QSpinBox" name="bin_range_max_spin">
+          <property name="minimum">
+           <number>-1000000</number>
+          </property>
+          <property name="maximum">
+           <number>1000000</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Bihistogram</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QCheckBox" name="bihist_check">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Density</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QCheckBox" name="density_check">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Cumulative</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QCheckBox" name="cumulative_check">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>Log</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QCheckBox" name="log_check">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>BottomDistance</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QDoubleSpinBox" name="bottom_distance_spin">
+       <property name="maximum">
+        <double>1000000.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.010000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>HistType</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QComboBox" name="hist_type_combo">
+       <item>
+        <property name="text">
+         <string>bar</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>barstacked</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>step</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>stepfilled</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Align</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QComboBox" name="align_combo">
+       <item>
+        <property name="text">
+         <string>mid</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>left</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>right</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>Orientation</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QComboBox" name="orientation_combo">
+       <item>
+        <property name="text">
+         <string>vertical</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>horizontal</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>ColorSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="1">
+      <widget class="QToolButton" name="color_series_btn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="1">
+      <widget class="QLineEdit" name="color_series_line"/>
+     </item>
+     <item row="17" column="1">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="15" column="1">
+      <widget class="QCheckBox" name="stacked_check">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="0">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>Stacked</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="1">
+      <widget class="QSlider" name="transparent_slider">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="value">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>Transparency</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

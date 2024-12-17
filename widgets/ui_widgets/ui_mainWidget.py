@@ -1,0 +1,2132 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'mainWidgetUI-v2gOJrEx.ui'
+##
+## Created by: Qt User Interface Compiler version 6.7.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
+    QCursor, QFont, QFontDatabase, QGradient,
+    QIcon, QImage, QKeySequence, QLinearGradient,
+    QPainter, QPalette, QPixmap, QRadialGradient,
+    QTransform)
+from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDial,
+    QDockWidget, QDoubleSpinBox, QFrame, QGridLayout,
+    QGroupBox, QHBoxLayout, QHeaderView, QLabel,
+    QLineEdit, QMainWindow, QPushButton, QScrollArea,
+    QSizePolicy, QSlider, QSpinBox, QStackedWidget,
+    QTableWidget, QTableWidgetItem, QToolBar, QToolButton,
+    QVBoxLayout, QWidget)
+import resources_rc
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        if not MainWindow.objectName():
+            MainWindow.setObjectName(u"MainWindow")
+        MainWindow.resize(1362, 823)
+        MainWindow.setStyleSheet(u"menubar{\n"
+"	margin-right: 20px;\n"
+"}")
+        self.actionNew = QAction(MainWindow)
+        self.actionNew.setObjectName(u"actionNew")
+        icon = QIcon()
+        icon.addFile(u":/icon/icons/xinjian.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionNew.setIcon(icon)
+        font = QFont()
+        font.setPointSize(6)
+        self.actionNew.setFont(font)
+        self.actionNew.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionOpen = QAction(MainWindow)
+        self.actionOpen.setObjectName(u"actionOpen")
+        icon1 = QIcon()
+        icon1.addFile(u":/icon/icons/folderOpen.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionOpen.setIcon(icon1)
+        self.actionOpen.setFont(font)
+        self.actionOpen.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionSave = QAction(MainWindow)
+        self.actionSave.setObjectName(u"actionSave")
+        icon2 = QIcon()
+        icon2.addFile(u":/icon/icons/baocun.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionSave.setIcon(icon2)
+        self.actionSave.setFont(font)
+        self.actionSave.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionImportData = QAction(MainWindow)
+        self.actionImportData.setObjectName(u"actionImportData")
+        icon3 = QIcon()
+        icon3.addFile(u":/icon/icons/daorushuju.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionImportData.setIcon(icon3)
+        self.actionImportData.setFont(font)
+        self.actionImportData.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionExportData = QAction(MainWindow)
+        self.actionExportData.setObjectName(u"actionExportData")
+        icon4 = QIcon()
+        icon4.addFile(u":/icon/icons/daorushuju1.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionExportData.setIcon(icon4)
+        self.actionExportData.setFont(font)
+        self.actionExportData.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionExportImage = QAction(MainWindow)
+        self.actionExportImage.setObjectName(u"actionExportImage")
+        icon5 = QIcon()
+        icon5.addFile(u":/icon/icons/daochutupian.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionExportImage.setIcon(icon5)
+        self.actionExportImage.setFont(font)
+        self.actionExportImage.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionHelp = QAction(MainWindow)
+        self.actionHelp.setObjectName(u"actionHelp")
+        icon6 = QIcon()
+        icon6.addFile(u":/icon/icons/bangzhuwendangwenjian.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionHelp.setIcon(icon6)
+        self.actionHelp.setFont(font)
+        self.actionHelp.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionLineLayer = QAction(MainWindow)
+        self.actionLineLayer.setObjectName(u"actionLineLayer")
+        icon7 = QIcon()
+        icon7.addFile(u":/images/images/line_layer.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionLineLayer.setIcon(icon7)
+        self.actionLineLayer.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionAnnotationLayer = QAction(MainWindow)
+        self.actionAnnotationLayer.setObjectName(u"actionAnnotationLayer")
+        icon8 = QIcon()
+        icon8.addFile(u":/images/images/annotation_layer.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionAnnotationLayer.setIcon(icon8)
+        self.actionAnnotationLayer.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionCDFLayer = QAction(MainWindow)
+        self.actionCDFLayer.setObjectName(u"actionCDFLayer")
+        icon9 = QIcon()
+        icon9.addFile(u":/images/images/cdf_layer.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionCDFLayer.setIcon(icon9)
+        self.actionCDFLayer.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionDensityLayer = QAction(MainWindow)
+        self.actionDensityLayer.setObjectName(u"actionDensityLayer")
+        icon10 = QIcon()
+        icon10.addFile(u":/images/images/density_layer.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionDensityLayer.setIcon(icon10)
+        self.actionDensityLayer.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionErrorLayer = QAction(MainWindow)
+        self.actionErrorLayer.setObjectName(u"actionErrorLayer")
+        icon11 = QIcon()
+        icon11.addFile(u":/images/images/error_layer.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionErrorLayer.setIcon(icon11)
+        self.actionErrorLayer.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionFillBetweenLayer = QAction(MainWindow)
+        self.actionFillBetweenLayer.setObjectName(u"actionFillBetweenLayer")
+        icon12 = QIcon()
+        icon12.addFile(u":/images/images/fill_between_layer.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionFillBetweenLayer.setIcon(icon12)
+        self.actionFillBetweenLayer.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionRegressionLayer = QAction(MainWindow)
+        self.actionRegressionLayer.setObjectName(u"actionRegressionLayer")
+        icon13 = QIcon()
+        icon13.addFile(u":/images/images/regression_layer.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionRegressionLayer.setIcon(icon13)
+        self.actionRegressionLayer.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionScatterLayer = QAction(MainWindow)
+        self.actionScatterLayer.setObjectName(u"actionScatterLayer")
+        icon14 = QIcon()
+        icon14.addFile(u":/images/images/scatter_layer.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionScatterLayer.setIcon(icon14)
+        self.actionScatterLayer.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionSpanLayer = QAction(MainWindow)
+        self.actionSpanLayer.setObjectName(u"actionSpanLayer")
+        icon15 = QIcon()
+        icon15.addFile(u":/images/images/span_layer.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionSpanLayer.setIcon(icon15)
+        self.actionSpanLayer.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionStairsLayer = QAction(MainWindow)
+        self.actionStairsLayer.setObjectName(u"actionStairsLayer")
+        icon16 = QIcon()
+        icon16.addFile(u":/images/images/stairs_layer.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionStairsLayer.setIcon(icon16)
+        self.actionStairsLayer.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionTextLayer = QAction(MainWindow)
+        self.actionTextLayer.setObjectName(u"actionTextLayer")
+        icon17 = QIcon()
+        icon17.addFile(u":/images/images/text_layer.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionTextLayer.setIcon(icon17)
+        self.actionTextLayer.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionVHLineLayer = QAction(MainWindow)
+        self.actionVHLineLayer.setObjectName(u"actionVHLineLayer")
+        icon18 = QIcon()
+        icon18.addFile(u":/images/images/vhline_layer.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionVHLineLayer.setIcon(icon18)
+        self.actionVHLineLayer.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionBarChart = QAction(MainWindow)
+        self.actionBarChart.setObjectName(u"actionBarChart")
+        icon19 = QIcon()
+        icon19.addFile(u":/images/images/bar.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionBarChart.setIcon(icon19)
+        font1 = QFont()
+        font1.setPointSize(9)
+        self.actionBarChart.setFont(font1)
+        self.actionBarChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionLineChart = QAction(MainWindow)
+        self.actionLineChart.setObjectName(u"actionLineChart")
+        icon20 = QIcon()
+        icon20.addFile(u":/images/images/line.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionLineChart.setIcon(icon20)
+        self.actionLineChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionHBarChart = QAction(MainWindow)
+        self.actionHBarChart.setObjectName(u"actionHBarChart")
+        icon21 = QIcon()
+        icon21.addFile(u":/images/images/hbar.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionHBarChart.setIcon(icon21)
+        self.actionHBarChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionScatterChart = QAction(MainWindow)
+        self.actionScatterChart.setObjectName(u"actionScatterChart")
+        icon22 = QIcon()
+        icon22.addFile(u":/images/images/scatter.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionScatterChart.setIcon(icon22)
+        self.actionScatterChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionStackedAreaChart = QAction(MainWindow)
+        self.actionStackedAreaChart.setObjectName(u"actionStackedAreaChart")
+        icon23 = QIcon()
+        icon23.addFile(u":/images/images/stackarea.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionStackedAreaChart.setIcon(icon23)
+        self.actionStackedAreaChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionStemChart = QAction(MainWindow)
+        self.actionStemChart.setObjectName(u"actionStemChart")
+        icon24 = QIcon()
+        icon24.addFile(u":/images/images/stem.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionStemChart.setIcon(icon24)
+        self.actionStemChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionRadarChart = QAction(MainWindow)
+        self.actionRadarChart.setObjectName(u"actionRadarChart")
+        icon25 = QIcon()
+        icon25.addFile(u":/images/images/radar.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionRadarChart.setIcon(icon25)
+        self.actionRadarChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionHistgram = QAction(MainWindow)
+        self.actionHistgram.setObjectName(u"actionHistgram")
+        icon26 = QIcon()
+        icon26.addFile(u":/images/images/hist.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionHistgram.setIcon(icon26)
+        self.actionHistgram.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionPieChart = QAction(MainWindow)
+        self.actionPieChart.setObjectName(u"actionPieChart")
+        icon27 = QIcon()
+        icon27.addFile(u":/images/images/pie.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionPieChart.setIcon(icon27)
+        self.actionPieChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionPieChartWithBar = QAction(MainWindow)
+        self.actionPieChartWithBar.setObjectName(u"actionPieChartWithBar")
+        icon28 = QIcon()
+        icon28.addFile(u":/images/images/piewithbar.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionPieChartWithBar.setIcon(icon28)
+        self.actionPieChartWithBar.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionBoxChart = QAction(MainWindow)
+        self.actionBoxChart.setObjectName(u"actionBoxChart")
+        icon29 = QIcon()
+        icon29.addFile(u":/images/images/box.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionBoxChart.setIcon(icon29)
+        self.actionBoxChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionErrorChart = QAction(MainWindow)
+        self.actionErrorChart.setObjectName(u"actionErrorChart")
+        icon30 = QIcon()
+        icon30.addFile(u":/images/images/error.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionErrorChart.setIcon(icon30)
+        self.actionErrorChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionViolinChart = QAction(MainWindow)
+        self.actionViolinChart.setObjectName(u"actionViolinChart")
+        icon31 = QIcon()
+        icon31.addFile(u":/images/images/violin.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionViolinChart.setIcon(icon31)
+        self.actionViolinChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionHeatmapChart = QAction(MainWindow)
+        self.actionHeatmapChart.setObjectName(u"actionHeatmapChart")
+        icon32 = QIcon()
+        icon32.addFile(u":/images/images/heatmap.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionHeatmapChart.setIcon(icon32)
+        self.actionHeatmapChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionEventChart = QAction(MainWindow)
+        self.actionEventChart.setObjectName(u"actionEventChart")
+        icon33 = QIcon()
+        icon33.addFile(u":/images/images/event.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionEventChart.setIcon(icon33)
+        self.actionEventChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionAutoCorrelationChart = QAction(MainWindow)
+        self.actionAutoCorrelationChart.setObjectName(u"actionAutoCorrelationChart")
+        icon34 = QIcon()
+        icon34.addFile(u":/images/images/autocorrelation.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionAutoCorrelationChart.setIcon(icon34)
+        self.actionAutoCorrelationChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionStairsChart = QAction(MainWindow)
+        self.actionStairsChart.setObjectName(u"actionStairsChart")
+        icon35 = QIcon()
+        icon35.addFile(u":/images/images/stairs.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionStairsChart.setIcon(icon35)
+        self.actionStairsChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.actionWordcloudChart = QAction(MainWindow)
+        self.actionWordcloudChart.setObjectName(u"actionWordcloudChart")
+        icon36 = QIcon()
+        icon36.addFile(u":/images/images/word.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.actionWordcloudChart.setIcon(icon36)
+        self.actionWordcloudChart.setMenuRole(QAction.MenuRole.NoRole)
+        self.centralwidget = QWidget(MainWindow)
+        self.centralwidget.setObjectName(u"centralwidget")
+        self.horizontalLayout = QHBoxLayout(self.centralwidget)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.stackedWidget = QStackedWidget(self.centralwidget)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.page_1 = QWidget()
+        self.page_1.setObjectName(u"page_1")
+        self.verticalLayout_11 = QVBoxLayout(self.page_1)
+        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.verticalLayout_10 = QVBoxLayout()
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setSpacing(2)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.chartScrollArea = QScrollArea(self.page_1)
+        self.chartScrollArea.setObjectName(u"chartScrollArea")
+        self.chartScrollArea.setFrameShape(QFrame.Shape.StyledPanel)
+        self.chartScrollArea.setFrameShadow(QFrame.Shadow.Plain)
+        self.chartScrollArea.setWidgetResizable(False)
+        self.chartScrollArea.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.chartScrollAreaWidgetContents = QWidget()
+        self.chartScrollAreaWidgetContents.setObjectName(u"chartScrollAreaWidgetContents")
+        self.chartScrollAreaWidgetContents.setGeometry(QRect(0, 0, 648, 499))
+        self.chartScrollArea.setWidget(self.chartScrollAreaWidgetContents)
+
+        self.horizontalLayout_2.addWidget(self.chartScrollArea)
+
+
+        self.horizontalLayout_4.addLayout(self.horizontalLayout_2)
+
+        self.groupBox = QGroupBox(self.page_1)
+        self.groupBox.setObjectName(u"groupBox")
+        self.groupBox.setMinimumSize(QSize(300, 0))
+        self.groupBox.setMaximumSize(QSize(300, 16777215))
+        self.groupBox.setStyleSheet(u"QGroupBox#groupBox{\n"
+"border: 1px solid gray;\n"
+"}")
+        self.verticalLayout_14 = QVBoxLayout(self.groupBox)
+        self.verticalLayout_14.setObjectName(u"verticalLayout_14")
+        self.verticalLayout_14.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_9 = QVBoxLayout()
+        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.verticalLayout_9.setContentsMargins(-1, 6, -1, -1)
+        self.add_layer_btn = QPushButton(self.groupBox)
+        self.add_layer_btn.setObjectName(u"add_layer_btn")
+        self.add_layer_btn.setMaximumSize(QSize(16777215, 16777215))
+        font2 = QFont()
+        font2.setBold(False)
+        self.add_layer_btn.setFont(font2)
+        self.add_layer_btn.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
+        self.add_layer_btn.setStyleSheet(u"QPushButton#add_layer_btn{\n"
+"margin-left: 15px;\n"
+"margin-right: 21px;\n"
+"padding: 2px;\n"
+"}")
+        self.add_layer_btn.setFlat(False)
+
+        self.verticalLayout_9.addWidget(self.add_layer_btn)
+
+        self.frame_3 = QFrame(self.groupBox)
+        self.frame_3.setObjectName(u"frame_3")
+        self.frame_3.setFrameShape(QFrame.Shape.NoFrame)
+        self.frame_3.setFrameShadow(QFrame.Shadow.Plain)
+        self.gridLayout_2 = QGridLayout(self.frame_3)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(16, 0, 16, 0)
+        self.chart_type_label = QLabel(self.frame_3)
+        self.chart_type_label.setObjectName(u"chart_type_label")
+        self.chart_type_label.setMinimumSize(QSize(100, 0))
+        self.chart_type_label.setMaximumSize(QSize(76, 16777215))
+
+        self.gridLayout_2.addWidget(self.chart_type_label, 0, 0, 1, 1)
+
+        self.chart_type_combo = QComboBox(self.frame_3)
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.addItem("")
+        self.chart_type_combo.setObjectName(u"chart_type_combo")
+        self.chart_type_combo.setStyleSheet(u"margin-right: 6px;\n"
+"margin-left: 2px;")
+
+        self.gridLayout_2.addWidget(self.chart_type_combo, 0, 1, 1, 1)
+
+
+        self.verticalLayout_9.addWidget(self.frame_3)
+
+        self.line = QFrame(self.groupBox)
+        self.line.setObjectName(u"line")
+        self.line.setStyleSheet(u"")
+        self.line.setFrameShape(QFrame.Shape.HLine)
+        self.line.setFrameShadow(QFrame.Shadow.Sunken)
+
+        self.verticalLayout_9.addWidget(self.line)
+
+        self.stackedWidget_2 = QStackedWidget(self.groupBox)
+        self.stackedWidget_2.setObjectName(u"stackedWidget_2")
+        self.bar_chart_layer = QWidget()
+        self.bar_chart_layer.setObjectName(u"bar_chart_layer")
+        self.verticalLayout_12 = QVBoxLayout(self.bar_chart_layer)
+        self.verticalLayout_12.setObjectName(u"verticalLayout_12")
+        self.verticalLayout_12.setContentsMargins(0, 0, 0, 0)
+        self.bar_chart_scoll_area = QScrollArea(self.bar_chart_layer)
+        self.bar_chart_scoll_area.setObjectName(u"bar_chart_scoll_area")
+        self.bar_chart_scoll_area.setFrameShape(QFrame.Shape.NoFrame)
+        self.bar_chart_scoll_area.setFrameShadow(QFrame.Shadow.Plain)
+        self.bar_chart_scoll_area.setLineWidth(1)
+        self.bar_chart_scoll_area.setWidgetResizable(True)
+        self.bar_chart_scoll_area_content = QWidget()
+        self.bar_chart_scoll_area_content.setObjectName(u"bar_chart_scoll_area_content")
+        self.bar_chart_scoll_area_content.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_14 = QGridLayout(self.bar_chart_scoll_area_content)
+        self.gridLayout_14.setObjectName(u"gridLayout_14")
+        self.bar_chart_scoll_area.setWidget(self.bar_chart_scoll_area_content)
+
+        self.verticalLayout_12.addWidget(self.bar_chart_scoll_area)
+
+        self.stackedWidget_2.addWidget(self.bar_chart_layer)
+        self.line_chart_layer = QWidget()
+        self.line_chart_layer.setObjectName(u"line_chart_layer")
+        self.verticalLayout_2 = QVBoxLayout(self.line_chart_layer)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.line_chart_scoll_area = QScrollArea(self.line_chart_layer)
+        self.line_chart_scoll_area.setObjectName(u"line_chart_scoll_area")
+        self.line_chart_scoll_area.setFrameShape(QFrame.Shape.NoFrame)
+        self.line_chart_scoll_area.setFrameShadow(QFrame.Shadow.Plain)
+        self.line_chart_scoll_area.setWidgetResizable(True)
+        self.line_chart_scoll_area_content = QWidget()
+        self.line_chart_scoll_area_content.setObjectName(u"line_chart_scoll_area_content")
+        self.line_chart_scoll_area_content.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_3 = QGridLayout(self.line_chart_scoll_area_content)
+        self.gridLayout_3.setObjectName(u"gridLayout_3")
+        self.line_chart_scoll_area.setWidget(self.line_chart_scoll_area_content)
+
+        self.verticalLayout_2.addWidget(self.line_chart_scoll_area)
+
+        self.stackedWidget_2.addWidget(self.line_chart_layer)
+        self.hbar_chart_layer = QWidget()
+        self.hbar_chart_layer.setObjectName(u"hbar_chart_layer")
+        self.verticalLayout_7 = QVBoxLayout(self.hbar_chart_layer)
+        self.verticalLayout_7.setObjectName(u"verticalLayout_7")
+        self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea = QScrollArea(self.hbar_chart_layer)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_15 = QGridLayout(self.scrollAreaWidgetContents)
+        self.gridLayout_15.setObjectName(u"gridLayout_15")
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+
+        self.verticalLayout_7.addWidget(self.scrollArea)
+
+        self.stackedWidget_2.addWidget(self.hbar_chart_layer)
+        self.scatter_chart_layer = QWidget()
+        self.scatter_chart_layer.setObjectName(u"scatter_chart_layer")
+        self.verticalLayout_8 = QVBoxLayout(self.scatter_chart_layer)
+        self.verticalLayout_8.setObjectName(u"verticalLayout_8")
+        self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_2 = QScrollArea(self.scatter_chart_layer)
+        self.scrollArea_2.setObjectName(u"scrollArea_2")
+        self.scrollArea_2.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_2.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_2.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_2 = QWidget()
+        self.scrollAreaWidgetContents_2.setObjectName(u"scrollAreaWidgetContents_2")
+        self.scrollAreaWidgetContents_2.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_16 = QGridLayout(self.scrollAreaWidgetContents_2)
+        self.gridLayout_16.setObjectName(u"gridLayout_16")
+        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
+
+        self.verticalLayout_8.addWidget(self.scrollArea_2)
+
+        self.stackedWidget_2.addWidget(self.scatter_chart_layer)
+        self.area_chart_layer = QWidget()
+        self.area_chart_layer.setObjectName(u"area_chart_layer")
+        self.verticalLayout_13 = QVBoxLayout(self.area_chart_layer)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.verticalLayout_13.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_3 = QScrollArea(self.area_chart_layer)
+        self.scrollArea_3.setObjectName(u"scrollArea_3")
+        self.scrollArea_3.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_3.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_3.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_3 = QWidget()
+        self.scrollAreaWidgetContents_3.setObjectName(u"scrollAreaWidgetContents_3")
+        self.scrollAreaWidgetContents_3.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_17 = QGridLayout(self.scrollAreaWidgetContents_3)
+        self.gridLayout_17.setObjectName(u"gridLayout_17")
+        self.scrollArea_3.setWidget(self.scrollAreaWidgetContents_3)
+
+        self.verticalLayout_13.addWidget(self.scrollArea_3)
+
+        self.stackedWidget_2.addWidget(self.area_chart_layer)
+        self.stem_chart_layer = QWidget()
+        self.stem_chart_layer.setObjectName(u"stem_chart_layer")
+        self.verticalLayout_24 = QVBoxLayout(self.stem_chart_layer)
+        self.verticalLayout_24.setObjectName(u"verticalLayout_24")
+        self.verticalLayout_24.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_13 = QScrollArea(self.stem_chart_layer)
+        self.scrollArea_13.setObjectName(u"scrollArea_13")
+        self.scrollArea_13.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_13.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_13.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_13 = QWidget()
+        self.scrollAreaWidgetContents_13.setObjectName(u"scrollAreaWidgetContents_13")
+        self.scrollAreaWidgetContents_13.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_18 = QGridLayout(self.scrollAreaWidgetContents_13)
+        self.gridLayout_18.setObjectName(u"gridLayout_18")
+        self.scrollArea_13.setWidget(self.scrollAreaWidgetContents_13)
+
+        self.verticalLayout_24.addWidget(self.scrollArea_13)
+
+        self.stackedWidget_2.addWidget(self.stem_chart_layer)
+        self.radar_chart_layer = QWidget()
+        self.radar_chart_layer.setObjectName(u"radar_chart_layer")
+        self.verticalLayout_22 = QVBoxLayout(self.radar_chart_layer)
+        self.verticalLayout_22.setObjectName(u"verticalLayout_22")
+        self.verticalLayout_22.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_11 = QScrollArea(self.radar_chart_layer)
+        self.scrollArea_11.setObjectName(u"scrollArea_11")
+        self.scrollArea_11.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_11.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_11.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_11 = QWidget()
+        self.scrollAreaWidgetContents_11.setObjectName(u"scrollAreaWidgetContents_11")
+        self.scrollAreaWidgetContents_11.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_19 = QGridLayout(self.scrollAreaWidgetContents_11)
+        self.gridLayout_19.setObjectName(u"gridLayout_19")
+        self.scrollArea_11.setWidget(self.scrollAreaWidgetContents_11)
+
+        self.verticalLayout_22.addWidget(self.scrollArea_11)
+
+        self.stackedWidget_2.addWidget(self.radar_chart_layer)
+        self.histgram_chart_layer = QWidget()
+        self.histgram_chart_layer.setObjectName(u"histgram_chart_layer")
+        self.verticalLayout_20 = QVBoxLayout(self.histgram_chart_layer)
+        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
+        self.verticalLayout_20.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_9 = QScrollArea(self.histgram_chart_layer)
+        self.scrollArea_9.setObjectName(u"scrollArea_9")
+        self.scrollArea_9.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_9.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_9.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_9 = QWidget()
+        self.scrollAreaWidgetContents_9.setObjectName(u"scrollAreaWidgetContents_9")
+        self.scrollAreaWidgetContents_9.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_20 = QGridLayout(self.scrollAreaWidgetContents_9)
+        self.gridLayout_20.setObjectName(u"gridLayout_20")
+        self.scrollArea_9.setWidget(self.scrollAreaWidgetContents_9)
+
+        self.verticalLayout_20.addWidget(self.scrollArea_9)
+
+        self.stackedWidget_2.addWidget(self.histgram_chart_layer)
+        self.pie_chart_layer = QWidget()
+        self.pie_chart_layer.setObjectName(u"pie_chart_layer")
+        self.verticalLayout_21 = QVBoxLayout(self.pie_chart_layer)
+        self.verticalLayout_21.setObjectName(u"verticalLayout_21")
+        self.verticalLayout_21.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_10 = QScrollArea(self.pie_chart_layer)
+        self.scrollArea_10.setObjectName(u"scrollArea_10")
+        self.scrollArea_10.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_10.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_10.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_10 = QWidget()
+        self.scrollAreaWidgetContents_10.setObjectName(u"scrollAreaWidgetContents_10")
+        self.scrollAreaWidgetContents_10.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_21 = QGridLayout(self.scrollAreaWidgetContents_10)
+        self.gridLayout_21.setObjectName(u"gridLayout_21")
+        self.scrollArea_10.setWidget(self.scrollAreaWidgetContents_10)
+
+        self.verticalLayout_21.addWidget(self.scrollArea_10)
+
+        self.stackedWidget_2.addWidget(self.pie_chart_layer)
+        self.box_chart_layer = QWidget()
+        self.box_chart_layer.setObjectName(u"box_chart_layer")
+        self.verticalLayout_15 = QVBoxLayout(self.box_chart_layer)
+        self.verticalLayout_15.setObjectName(u"verticalLayout_15")
+        self.verticalLayout_15.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_4 = QScrollArea(self.box_chart_layer)
+        self.scrollArea_4.setObjectName(u"scrollArea_4")
+        self.scrollArea_4.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_4.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_4.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_4 = QWidget()
+        self.scrollAreaWidgetContents_4.setObjectName(u"scrollAreaWidgetContents_4")
+        self.scrollAreaWidgetContents_4.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_22 = QGridLayout(self.scrollAreaWidgetContents_4)
+        self.gridLayout_22.setObjectName(u"gridLayout_22")
+        self.scrollArea_4.setWidget(self.scrollAreaWidgetContents_4)
+
+        self.verticalLayout_15.addWidget(self.scrollArea_4)
+
+        self.stackedWidget_2.addWidget(self.box_chart_layer)
+        self.errorbar_chart_layer = QWidget()
+        self.errorbar_chart_layer.setObjectName(u"errorbar_chart_layer")
+        self.verticalLayout_17 = QVBoxLayout(self.errorbar_chart_layer)
+        self.verticalLayout_17.setObjectName(u"verticalLayout_17")
+        self.verticalLayout_17.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_6 = QScrollArea(self.errorbar_chart_layer)
+        self.scrollArea_6.setObjectName(u"scrollArea_6")
+        self.scrollArea_6.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_6.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_6.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_6 = QWidget()
+        self.scrollAreaWidgetContents_6.setObjectName(u"scrollAreaWidgetContents_6")
+        self.scrollAreaWidgetContents_6.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_23 = QGridLayout(self.scrollAreaWidgetContents_6)
+        self.gridLayout_23.setObjectName(u"gridLayout_23")
+        self.scrollArea_6.setWidget(self.scrollAreaWidgetContents_6)
+
+        self.verticalLayout_17.addWidget(self.scrollArea_6)
+
+        self.stackedWidget_2.addWidget(self.errorbar_chart_layer)
+        self.violin_chart_layer = QWidget()
+        self.violin_chart_layer.setObjectName(u"violin_chart_layer")
+        self.verticalLayout_25 = QVBoxLayout(self.violin_chart_layer)
+        self.verticalLayout_25.setObjectName(u"verticalLayout_25")
+        self.verticalLayout_25.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_14 = QScrollArea(self.violin_chart_layer)
+        self.scrollArea_14.setObjectName(u"scrollArea_14")
+        self.scrollArea_14.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_14.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_14.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_14 = QWidget()
+        self.scrollAreaWidgetContents_14.setObjectName(u"scrollAreaWidgetContents_14")
+        self.scrollAreaWidgetContents_14.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_24 = QGridLayout(self.scrollAreaWidgetContents_14)
+        self.gridLayout_24.setObjectName(u"gridLayout_24")
+        self.scrollArea_14.setWidget(self.scrollAreaWidgetContents_14)
+
+        self.verticalLayout_25.addWidget(self.scrollArea_14)
+
+        self.stackedWidget_2.addWidget(self.violin_chart_layer)
+        self.heatmap_chart_layer = QWidget()
+        self.heatmap_chart_layer.setObjectName(u"heatmap_chart_layer")
+        self.verticalLayout_19 = QVBoxLayout(self.heatmap_chart_layer)
+        self.verticalLayout_19.setObjectName(u"verticalLayout_19")
+        self.verticalLayout_19.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_8 = QScrollArea(self.heatmap_chart_layer)
+        self.scrollArea_8.setObjectName(u"scrollArea_8")
+        self.scrollArea_8.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_8.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_8.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_8 = QWidget()
+        self.scrollAreaWidgetContents_8.setObjectName(u"scrollAreaWidgetContents_8")
+        self.scrollAreaWidgetContents_8.setGeometry(QRect(0, 0, 296, 431))
+        self.gridLayout_25 = QGridLayout(self.scrollAreaWidgetContents_8)
+        self.gridLayout_25.setObjectName(u"gridLayout_25")
+        self.scrollArea_8.setWidget(self.scrollAreaWidgetContents_8)
+
+        self.verticalLayout_19.addWidget(self.scrollArea_8)
+
+        self.stackedWidget_2.addWidget(self.heatmap_chart_layer)
+        self.event_chart_layer = QWidget()
+        self.event_chart_layer.setObjectName(u"event_chart_layer")
+        self.verticalLayout_18 = QVBoxLayout(self.event_chart_layer)
+        self.verticalLayout_18.setObjectName(u"verticalLayout_18")
+        self.verticalLayout_18.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_7 = QScrollArea(self.event_chart_layer)
+        self.scrollArea_7.setObjectName(u"scrollArea_7")
+        self.scrollArea_7.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_7.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_7.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_7 = QWidget()
+        self.scrollAreaWidgetContents_7.setObjectName(u"scrollAreaWidgetContents_7")
+        self.scrollAreaWidgetContents_7.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_26 = QGridLayout(self.scrollAreaWidgetContents_7)
+        self.gridLayout_26.setObjectName(u"gridLayout_26")
+        self.scrollArea_7.setWidget(self.scrollAreaWidgetContents_7)
+
+        self.verticalLayout_18.addWidget(self.scrollArea_7)
+
+        self.stackedWidget_2.addWidget(self.event_chart_layer)
+        self.auto_correlation_chart_layer = QWidget()
+        self.auto_correlation_chart_layer.setObjectName(u"auto_correlation_chart_layer")
+        self.verticalLayout_16 = QVBoxLayout(self.auto_correlation_chart_layer)
+        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
+        self.verticalLayout_16.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_5 = QScrollArea(self.auto_correlation_chart_layer)
+        self.scrollArea_5.setObjectName(u"scrollArea_5")
+        self.scrollArea_5.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_5.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_5.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_5 = QWidget()
+        self.scrollAreaWidgetContents_5.setObjectName(u"scrollAreaWidgetContents_5")
+        self.scrollAreaWidgetContents_5.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_27 = QGridLayout(self.scrollAreaWidgetContents_5)
+        self.gridLayout_27.setObjectName(u"gridLayout_27")
+        self.scrollArea_5.setWidget(self.scrollAreaWidgetContents_5)
+
+        self.verticalLayout_16.addWidget(self.scrollArea_5)
+
+        self.stackedWidget_2.addWidget(self.auto_correlation_chart_layer)
+        self.stairs_chart_layer = QWidget()
+        self.stairs_chart_layer.setObjectName(u"stairs_chart_layer")
+        self.verticalLayout_23 = QVBoxLayout(self.stairs_chart_layer)
+        self.verticalLayout_23.setObjectName(u"verticalLayout_23")
+        self.verticalLayout_23.setContentsMargins(0, 0, 0, 0)
+        self.scrollArea_12 = QScrollArea(self.stairs_chart_layer)
+        self.scrollArea_12.setObjectName(u"scrollArea_12")
+        self.scrollArea_12.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_12.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_12.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_12 = QWidget()
+        self.scrollAreaWidgetContents_12.setObjectName(u"scrollAreaWidgetContents_12")
+        self.scrollAreaWidgetContents_12.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_28 = QGridLayout(self.scrollAreaWidgetContents_12)
+        self.gridLayout_28.setObjectName(u"gridLayout_28")
+        self.scrollArea_12.setWidget(self.scrollAreaWidgetContents_12)
+
+        self.verticalLayout_23.addWidget(self.scrollArea_12)
+
+        self.stackedWidget_2.addWidget(self.stairs_chart_layer)
+        self.wordcloud_chart_layer = QWidget()
+        self.wordcloud_chart_layer.setObjectName(u"wordcloud_chart_layer")
+        self.verticalLayout_26 = QVBoxLayout(self.wordcloud_chart_layer)
+        self.verticalLayout_26.setObjectName(u"verticalLayout_26")
+        self.verticalLayout_26.setContentsMargins(-1, 0, 0, 0)
+        self.scrollArea_15 = QScrollArea(self.wordcloud_chart_layer)
+        self.scrollArea_15.setObjectName(u"scrollArea_15")
+        self.scrollArea_15.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_15.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_15.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_15 = QWidget()
+        self.scrollAreaWidgetContents_15.setObjectName(u"scrollAreaWidgetContents_15")
+        self.scrollAreaWidgetContents_15.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_29 = QGridLayout(self.scrollAreaWidgetContents_15)
+        self.gridLayout_29.setObjectName(u"gridLayout_29")
+        self.scrollArea_15.setWidget(self.scrollAreaWidgetContents_15)
+
+        self.verticalLayout_26.addWidget(self.scrollArea_15)
+
+        self.stackedWidget_2.addWidget(self.wordcloud_chart_layer)
+        self.pie_chart_with_bar_layer = QWidget()
+        self.pie_chart_with_bar_layer.setObjectName(u"pie_chart_with_bar_layer")
+        self.verticalLayout_27 = QVBoxLayout(self.pie_chart_with_bar_layer)
+        self.verticalLayout_27.setObjectName(u"verticalLayout_27")
+        self.scrollArea_16 = QScrollArea(self.pie_chart_with_bar_layer)
+        self.scrollArea_16.setObjectName(u"scrollArea_16")
+        self.scrollArea_16.setFrameShape(QFrame.Shape.NoFrame)
+        self.scrollArea_16.setFrameShadow(QFrame.Shadow.Plain)
+        self.scrollArea_16.setWidgetResizable(True)
+        self.scrollAreaWidgetContents_16 = QWidget()
+        self.scrollAreaWidgetContents_16.setObjectName(u"scrollAreaWidgetContents_16")
+        self.scrollAreaWidgetContents_16.setGeometry(QRect(0, 0, 100, 30))
+        self.gridLayout_30 = QGridLayout(self.scrollAreaWidgetContents_16)
+        self.gridLayout_30.setObjectName(u"gridLayout_30")
+        self.scrollArea_16.setWidget(self.scrollAreaWidgetContents_16)
+
+        self.verticalLayout_27.addWidget(self.scrollArea_16)
+
+        self.stackedWidget_2.addWidget(self.pie_chart_with_bar_layer)
+
+        self.verticalLayout_9.addWidget(self.stackedWidget_2)
+
+
+        self.verticalLayout_14.addLayout(self.verticalLayout_9)
+
+
+        self.horizontalLayout_4.addWidget(self.groupBox)
+
+        self.horizontalLayout_4.setStretch(0, 8)
+        self.horizontalLayout_4.setStretch(1, 1)
+
+        self.verticalLayout_10.addLayout(self.horizontalLayout_4)
+
+        self.verticalLayout_5 = QVBoxLayout()
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.table = QTableWidget(self.page_1)
+        self.table.setObjectName(u"table")
+
+        self.verticalLayout_5.addWidget(self.table)
+
+
+        self.verticalLayout_10.addLayout(self.verticalLayout_5)
+
+        self.verticalLayout_10.setStretch(0, 2)
+        self.verticalLayout_10.setStretch(1, 1)
+
+        self.verticalLayout_11.addLayout(self.verticalLayout_10)
+
+        self.stackedWidget.addWidget(self.page_1)
+        self.page_2 = QWidget()
+        self.page_2.setObjectName(u"page_2")
+        self.horizontalLayout_7 = QHBoxLayout(self.page_2)
+        self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
+        self.horizontalLayout_7.setContentsMargins(2, 2, 2, 2)
+        self.stackedWidget.addWidget(self.page_2)
+
+        self.horizontalLayout.addWidget(self.stackedWidget)
+
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.dockWidget = QDockWidget(MainWindow)
+        self.dockWidget.setObjectName(u"dockWidget")
+        self.dockWidget.setMinimumSize(QSize(330, 156))
+        self.dockWidget.setMaximumSize(QSize(330, 524287))
+        self.dockWidget.setAutoFillBackground(False)
+        self.dockWidget.setStyleSheet(u"QWidget#dockWidgetContents{\n"
+"border: 1px solid gray;\n"
+"}")
+        self.dockWidgetContents = QWidget()
+        self.dockWidgetContents.setObjectName(u"dockWidgetContents")
+        self.verticalLayout = QVBoxLayout(self.dockWidgetContents)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.verticalLayout.setContentsMargins(4, 4, 4, 4)
+        self.toolsScrollArea = QScrollArea(self.dockWidgetContents)
+        self.toolsScrollArea.setObjectName(u"toolsScrollArea")
+        self.toolsScrollArea.setWidgetResizable(True)
+        self.toolsScrollAreaWidgetContents = QWidget()
+        self.toolsScrollAreaWidgetContents.setObjectName(u"toolsScrollAreaWidgetContents")
+        self.toolsScrollAreaWidgetContents.setGeometry(QRect(0, 0, 300, 1987))
+        self.toolsScrollAreaWidgetContents.setMaximumSize(QSize(300, 16777215))
+        self.verticalLayout_6 = QVBoxLayout(self.toolsScrollAreaWidgetContents)
+        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
+        self.verticalLayout_6.setContentsMargins(0, 4, 0, 4)
+        self.data_layout_group_box = QGroupBox(self.toolsScrollAreaWidgetContents)
+        self.data_layout_group_box.setObjectName(u"data_layout_group_box")
+        font3 = QFont()
+        font3.setPointSize(10)
+        font3.setBold(True)
+        self.data_layout_group_box.setFont(font3)
+        self.verticalLayout_3 = QVBoxLayout(self.data_layout_group_box)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.data_layout_1 = QFrame(self.data_layout_group_box)
+        self.data_layout_1.setObjectName(u"data_layout_1")
+        self.data_layout_1.setFrameShape(QFrame.Shape.StyledPanel)
+        self.data_layout_1.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout = QGridLayout(self.data_layout_1)
+        self.gridLayout.setObjectName(u"gridLayout")
+        self.show_grid_label = QLabel(self.data_layout_1)
+        self.show_grid_label.setObjectName(u"show_grid_label")
+
+        self.gridLayout.addWidget(self.show_grid_label, 5, 0, 1, 1)
+
+        self.label = QLabel(self.data_layout_1)
+        self.label.setObjectName(u"label")
+
+        self.gridLayout.addWidget(self.label, 10, 0, 1, 1)
+
+        self.grid_line_style_combo = QComboBox(self.data_layout_1)
+        self.grid_line_style_combo.addItem("")
+        self.grid_line_style_combo.addItem("")
+        self.grid_line_style_combo.addItem("")
+        self.grid_line_style_combo.addItem("")
+        self.grid_line_style_combo.setObjectName(u"grid_line_style_combo")
+
+        self.gridLayout.addWidget(self.grid_line_style_combo, 8, 1, 1, 1)
+
+        self.chart_bg_color_label = QLabel(self.data_layout_1)
+        self.chart_bg_color_label.setObjectName(u"chart_bg_color_label")
+
+        self.gridLayout.addWidget(self.chart_bg_color_label, 4, 0, 1, 1)
+
+        self.canvas_grid_check_box = QCheckBox(self.data_layout_1)
+        self.canvas_grid_check_box.setObjectName(u"canvas_grid_check_box")
+
+        self.gridLayout.addWidget(self.canvas_grid_check_box, 5, 1, 1, 1)
+
+        self.grid_line_width_spin = QDoubleSpinBox(self.data_layout_1)
+        self.grid_line_width_spin.setObjectName(u"grid_line_width_spin")
+        self.grid_line_width_spin.setMaximum(100.000000000000000)
+        self.grid_line_width_spin.setSingleStep(0.100000000000000)
+        self.grid_line_width_spin.setValue(1.000000000000000)
+
+        self.gridLayout.addWidget(self.grid_line_width_spin, 7, 1, 1, 1)
+
+        self.grid_transparent_slider = QSlider(self.data_layout_1)
+        self.grid_transparent_slider.setObjectName(u"grid_transparent_slider")
+        self.grid_transparent_slider.setEnabled(False)
+        self.grid_transparent_slider.setMaximum(100)
+        self.grid_transparent_slider.setValue(50)
+        self.grid_transparent_slider.setOrientation(Qt.Orientation.Horizontal)
+
+        self.gridLayout.addWidget(self.grid_transparent_slider, 9, 1, 1, 1)
+
+        self.canvas_bg_color_btn = QToolButton(self.data_layout_1)
+        self.canvas_bg_color_btn.setObjectName(u"canvas_bg_color_btn")
+
+        self.gridLayout.addWidget(self.canvas_bg_color_btn, 2, 1, 1, 1)
+
+        self.verticalLayout_28 = QVBoxLayout()
+        self.verticalLayout_28.setObjectName(u"verticalLayout_28")
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.label_11 = QLabel(self.data_layout_1)
+        self.label_11.setObjectName(u"label_11")
+        self.label_11.setMinimumSize(QSize(38, 0))
+
+        self.horizontalLayout_3.addWidget(self.label_11)
+
+        self.canvas_width_spin = QDoubleSpinBox(self.data_layout_1)
+        self.canvas_width_spin.setObjectName(u"canvas_width_spin")
+        self.canvas_width_spin.setMinimum(1.000000000000000)
+        self.canvas_width_spin.setMaximum(1000.000000000000000)
+        self.canvas_width_spin.setSingleStep(0.010000000000000)
+        self.canvas_width_spin.setValue(6.000000000000000)
+
+        self.horizontalLayout_3.addWidget(self.canvas_width_spin)
+
+        self.label_23 = QLabel(self.data_layout_1)
+        self.label_23.setObjectName(u"label_23")
+
+        self.horizontalLayout_3.addWidget(self.label_23)
+
+
+        self.verticalLayout_28.addLayout(self.horizontalLayout_3)
+
+        self.horizontalLayout_5 = QHBoxLayout()
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.label_24 = QLabel(self.data_layout_1)
+        self.label_24.setObjectName(u"label_24")
+        self.label_24.setMinimumSize(QSize(38, 0))
+
+        self.horizontalLayout_5.addWidget(self.label_24)
+
+        self.canvas_height_spin = QDoubleSpinBox(self.data_layout_1)
+        self.canvas_height_spin.setObjectName(u"canvas_height_spin")
+        self.canvas_height_spin.setMinimum(1.000000000000000)
+        self.canvas_height_spin.setMaximum(1000.000000000000000)
+        self.canvas_height_spin.setSingleStep(0.010000000000000)
+        self.canvas_height_spin.setValue(4.000000000000000)
+
+        self.horizontalLayout_5.addWidget(self.canvas_height_spin)
+
+        self.label_25 = QLabel(self.data_layout_1)
+        self.label_25.setObjectName(u"label_25")
+
+        self.horizontalLayout_5.addWidget(self.label_25)
+
+
+        self.verticalLayout_28.addLayout(self.horizontalLayout_5)
+
+        self.verticalLayout_28.setStretch(0, 1)
+        self.verticalLayout_28.setStretch(1, 2)
+
+        self.gridLayout.addLayout(self.verticalLayout_28, 0, 1, 1, 1)
+
+        self.show_xy_grid_slider = QSlider(self.data_layout_1)
+        self.show_xy_grid_slider.setObjectName(u"show_xy_grid_slider")
+        self.show_xy_grid_slider.setEnabled(False)
+        self.show_xy_grid_slider.setMinimum(-1)
+        self.show_xy_grid_slider.setMaximum(1)
+        self.show_xy_grid_slider.setOrientation(Qt.Orientation.Horizontal)
+        self.show_xy_grid_slider.setTickPosition(QSlider.TickPosition.TicksAbove)
+        self.show_xy_grid_slider.setTickInterval(0)
+
+        self.gridLayout.addWidget(self.show_xy_grid_slider, 10, 1, 1, 1)
+
+        self.label_9 = QLabel(self.data_layout_1)
+        self.label_9.setObjectName(u"label_9")
+        self.label_9.setMaximumSize(QSize(100, 16777215))
+
+        self.gridLayout.addWidget(self.label_9, 0, 0, 1, 1)
+
+        self.label_22 = QLabel(self.data_layout_1)
+        self.label_22.setObjectName(u"label_22")
+
+        self.gridLayout.addWidget(self.label_22, 8, 0, 1, 1)
+
+        self.chart_bg_color_btn = QToolButton(self.data_layout_1)
+        self.chart_bg_color_btn.setObjectName(u"chart_bg_color_btn")
+
+        self.gridLayout.addWidget(self.chart_bg_color_btn, 4, 1, 1, 1)
+
+        self.canvas_bg_color_label = QLabel(self.data_layout_1)
+        self.canvas_bg_color_label.setObjectName(u"canvas_bg_color_label")
+        self.canvas_bg_color_label.setMinimumSize(QSize(0, 0))
+        self.canvas_bg_color_label.setMaximumSize(QSize(100, 16777215))
+
+        self.gridLayout.addWidget(self.canvas_bg_color_label, 2, 0, 1, 1)
+
+        self.grid_transparent_label = QLabel(self.data_layout_1)
+        self.grid_transparent_label.setObjectName(u"grid_transparent_label")
+
+        self.gridLayout.addWidget(self.grid_transparent_label, 9, 0, 1, 1)
+
+        self.label_13 = QLabel(self.data_layout_1)
+        self.label_13.setObjectName(u"label_13")
+
+        self.gridLayout.addWidget(self.label_13, 6, 0, 1, 1)
+
+        self.grid_color_btn = QToolButton(self.data_layout_1)
+        self.grid_color_btn.setObjectName(u"grid_color_btn")
+
+        self.gridLayout.addWidget(self.grid_color_btn, 6, 1, 1, 1)
+
+        self.label_21 = QLabel(self.data_layout_1)
+        self.label_21.setObjectName(u"label_21")
+
+        self.gridLayout.addWidget(self.label_21, 7, 0, 1, 1)
+
+        self.label_26 = QLabel(self.data_layout_1)
+        self.label_26.setObjectName(u"label_26")
+        self.label_26.setMaximumSize(QSize(100, 16777215))
+
+        self.gridLayout.addWidget(self.label_26, 1, 0, 1, 1)
+
+        self.dpi_spin = QSpinBox(self.data_layout_1)
+        self.dpi_spin.setObjectName(u"dpi_spin")
+        self.dpi_spin.setMinimum(1)
+        self.dpi_spin.setMaximum(1000)
+        self.dpi_spin.setValue(100)
+
+        self.gridLayout.addWidget(self.dpi_spin, 1, 1, 1, 1)
+
+
+        self.verticalLayout_3.addWidget(self.data_layout_1)
+
+
+        self.verticalLayout_6.addWidget(self.data_layout_group_box)
+
+        self.base_setting_group_box = QGroupBox(self.toolsScrollAreaWidgetContents)
+        self.base_setting_group_box.setObjectName(u"base_setting_group_box")
+        self.base_setting_group_box.setFont(font3)
+        self.verticalLayout_4 = QVBoxLayout(self.base_setting_group_box)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.base_setting_x = QFrame(self.base_setting_group_box)
+        self.base_setting_x.setObjectName(u"base_setting_x")
+        self.base_setting_x.setFrameShape(QFrame.Shape.StyledPanel)
+        self.base_setting_x.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_5 = QGridLayout(self.base_setting_x)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.frame_5 = QFrame(self.base_setting_x)
+        self.frame_5.setObjectName(u"frame_5")
+        self.frame_5.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_5.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_12 = QGridLayout(self.frame_5)
+        self.gridLayout_12.setObjectName(u"gridLayout_12")
+        self.gridLayout_12.setContentsMargins(0, 0, -1, 0)
+        self.bs_x_tick_range_min_spin = QSpinBox(self.frame_5)
+        self.bs_x_tick_range_min_spin.setObjectName(u"bs_x_tick_range_min_spin")
+        self.bs_x_tick_range_min_spin.setMinimum(-1000000)
+        self.bs_x_tick_range_min_spin.setMaximum(1000000)
+
+        self.gridLayout_12.addWidget(self.bs_x_tick_range_min_spin, 0, 0, 1, 1)
+
+        self.label_15 = QLabel(self.frame_5)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_12.addWidget(self.label_15, 0, 1, 1, 1)
+
+        self.bs_x_tick_range_max_spin = QSpinBox(self.frame_5)
+        self.bs_x_tick_range_max_spin.setObjectName(u"bs_x_tick_range_max_spin")
+        self.bs_x_tick_range_max_spin.setMaximum(1000000)
+        self.bs_x_tick_range_max_spin.setValue(0)
+
+        self.gridLayout_12.addWidget(self.bs_x_tick_range_max_spin, 0, 2, 1, 1)
+
+
+        self.gridLayout_5.addWidget(self.frame_5, 7, 1, 1, 1)
+
+        self.bs_x_bold_check = QCheckBox(self.base_setting_x)
+        self.bs_x_bold_check.setObjectName(u"bs_x_bold_check")
+
+        self.gridLayout_5.addWidget(self.bs_x_bold_check, 5, 1, 1, 1)
+
+        self.label_14 = QLabel(self.base_setting_x)
+        self.label_14.setObjectName(u"label_14")
+
+        self.gridLayout_5.addWidget(self.label_14, 7, 0, 1, 1)
+
+        self.bs_x_tick_size_spin = QSpinBox(self.base_setting_x)
+        self.bs_x_tick_size_spin.setObjectName(u"bs_x_tick_size_spin")
+        self.bs_x_tick_size_spin.setValue(3)
+
+        self.gridLayout_5.addWidget(self.bs_x_tick_size_spin, 8, 1, 1, 1)
+
+        self.label_10 = QLabel(self.base_setting_x)
+        self.label_10.setObjectName(u"label_10")
+
+        self.gridLayout_5.addWidget(self.label_10, 11, 0, 1, 1)
+
+        self.bs_x_tick_label_color_btn = QToolButton(self.base_setting_x)
+        self.bs_x_tick_label_color_btn.setObjectName(u"bs_x_tick_label_color_btn")
+
+        self.gridLayout_5.addWidget(self.bs_x_tick_label_color_btn, 12, 1, 1, 1)
+
+        self.bs_x_minor_tick_interval_label = QLabel(self.base_setting_x)
+        self.bs_x_minor_tick_interval_label.setObjectName(u"bs_x_minor_tick_interval_label")
+
+        self.gridLayout_5.addWidget(self.bs_x_minor_tick_interval_label, 16, 0, 1, 1)
+
+        self.bs_x_minor_tick_check = QCheckBox(self.base_setting_x)
+        self.bs_x_minor_tick_check.setObjectName(u"bs_x_minor_tick_check")
+
+        self.gridLayout_5.addWidget(self.bs_x_minor_tick_check, 15, 1, 1, 1)
+
+        self.bs_x_tick_label_color_label = QLabel(self.base_setting_x)
+        self.bs_x_tick_label_color_label.setObjectName(u"bs_x_tick_label_color_label")
+
+        self.gridLayout_5.addWidget(self.bs_x_tick_label_color_label, 12, 0, 1, 1)
+
+        self.bs_x_tick_label_size_spin = QSpinBox(self.base_setting_x)
+        self.bs_x_tick_label_size_spin.setObjectName(u"bs_x_tick_label_size_spin")
+        self.bs_x_tick_label_size_spin.setMaximum(100)
+        self.bs_x_tick_label_size_spin.setValue(9)
+
+        self.gridLayout_5.addWidget(self.bs_x_tick_label_size_spin, 11, 1, 1, 1)
+
+        self.bs_x_minor_tick_interval_spin = QDoubleSpinBox(self.base_setting_x)
+        self.bs_x_minor_tick_interval_spin.setObjectName(u"bs_x_minor_tick_interval_spin")
+        self.bs_x_minor_tick_interval_spin.setEnabled(False)
+        self.bs_x_minor_tick_interval_spin.setMaximum(1000000.000000000000000)
+        self.bs_x_minor_tick_interval_spin.setSingleStep(0.010000000000000)
+        self.bs_x_minor_tick_interval_spin.setValue(1.000000000000000)
+
+        self.gridLayout_5.addWidget(self.bs_x_minor_tick_interval_spin, 16, 1, 1, 1)
+
+        self.bs_x_bold = QLabel(self.base_setting_x)
+        self.bs_x_bold.setObjectName(u"bs_x_bold")
+
+        self.gridLayout_5.addWidget(self.bs_x_bold, 5, 0, 1, 1)
+
+        self.bs_x_enable_check = QCheckBox(self.base_setting_x)
+        self.bs_x_enable_check.setObjectName(u"bs_x_enable_check")
+        self.bs_x_enable_check.setChecked(True)
+
+        self.gridLayout_5.addWidget(self.bs_x_enable_check, 1, 1, 1, 1)
+
+        self.bs_x_tick_value_series_label = QLabel(self.base_setting_x)
+        self.bs_x_tick_value_series_label.setObjectName(u"bs_x_tick_value_series_label")
+
+        self.gridLayout_5.addWidget(self.bs_x_tick_value_series_label, 13, 0, 1, 1)
+
+        self.bs_x_minor_tick_label = QLabel(self.base_setting_x)
+        self.bs_x_minor_tick_label.setObjectName(u"bs_x_minor_tick_label")
+
+        self.gridLayout_5.addWidget(self.bs_x_minor_tick_label, 15, 0, 1, 1)
+
+        self.bs_x_title_line_edit = QLineEdit(self.base_setting_x)
+        self.bs_x_title_line_edit.setObjectName(u"bs_x_title_line_edit")
+
+        self.gridLayout_5.addWidget(self.bs_x_title_line_edit, 2, 1, 1, 1)
+
+        self.bs_x_slope_dial = QDial(self.base_setting_x)
+        self.bs_x_slope_dial.setObjectName(u"bs_x_slope_dial")
+        self.bs_x_slope_dial.setMaximumSize(QSize(16777215, 16777215))
+        self.bs_x_slope_dial.setMaximum(360)
+
+        self.gridLayout_5.addWidget(self.bs_x_slope_dial, 17, 1, 1, 1)
+
+        self.bs_x_tick_combo = QComboBox(self.base_setting_x)
+        self.bs_x_tick_combo.addItem("")
+        self.bs_x_tick_combo.addItem("")
+        self.bs_x_tick_combo.addItem("")
+        self.bs_x_tick_combo.setObjectName(u"bs_x_tick_combo")
+
+        self.gridLayout_5.addWidget(self.bs_x_tick_combo, 6, 1, 1, 1)
+
+        self.bs_x_title = QLabel(self.base_setting_x)
+        self.bs_x_title.setObjectName(u"bs_x_title")
+        self.bs_x_title.setMinimumSize(QSize(100, 0))
+        self.bs_x_title.setMaximumSize(QSize(100, 16777215))
+
+        self.gridLayout_5.addWidget(self.bs_x_title, 2, 0, 1, 1)
+
+        self.bs_x_enable = QLabel(self.base_setting_x)
+        self.bs_x_enable.setObjectName(u"bs_x_enable")
+        self.bs_x_enable.setMinimumSize(QSize(100, 0))
+        self.bs_x_enable.setMaximumSize(QSize(100, 16777215))
+
+        self.gridLayout_5.addWidget(self.bs_x_enable, 1, 0, 1, 1)
+
+        self.bs_x_tick_color_label = QLabel(self.base_setting_x)
+        self.bs_x_tick_color_label.setObjectName(u"bs_x_tick_color_label")
+
+        self.gridLayout_5.addWidget(self.bs_x_tick_color_label, 9, 0, 1, 1)
+
+        self.bs_x_label_size_spin = QSpinBox(self.base_setting_x)
+        self.bs_x_label_size_spin.setObjectName(u"bs_x_label_size_spin")
+        self.bs_x_label_size_spin.setMinimum(1)
+        self.bs_x_label_size_spin.setValue(9)
+
+        self.gridLayout_5.addWidget(self.bs_x_label_size_spin, 3, 1, 1, 1)
+
+        self.bs_x_label_size = QLabel(self.base_setting_x)
+        self.bs_x_label_size.setObjectName(u"bs_x_label_size")
+
+        self.gridLayout_5.addWidget(self.bs_x_label_size, 3, 0, 1, 1)
+
+        self.label_18 = QLabel(self.base_setting_x)
+        self.label_18.setObjectName(u"label_18")
+
+        self.gridLayout_5.addWidget(self.label_18, 8, 0, 1, 1)
+
+        self.bs_x_slope = QLabel(self.base_setting_x)
+        self.bs_x_slope.setObjectName(u"bs_x_slope")
+
+        self.gridLayout_5.addWidget(self.bs_x_slope, 17, 0, 1, 1)
+
+        self.bs_x_tick_label_series_line = QLineEdit(self.base_setting_x)
+        self.bs_x_tick_label_series_line.setObjectName(u"bs_x_tick_label_series_line")
+
+        self.gridLayout_5.addWidget(self.bs_x_tick_label_series_line, 14, 1, 1, 1)
+
+        self.bs_x_label = QLabel(self.base_setting_x)
+        self.bs_x_label.setObjectName(u"bs_x_label")
+        font4 = QFont()
+        font4.setPointSize(10)
+        self.bs_x_label.setFont(font4)
+
+        self.gridLayout_5.addWidget(self.bs_x_label, 0, 0, 1, 1)
+
+        self.bs_x_tick = QLabel(self.base_setting_x)
+        self.bs_x_tick.setObjectName(u"bs_x_tick")
+
+        self.gridLayout_5.addWidget(self.bs_x_tick, 6, 0, 1, 1)
+
+        self.bs_x_tick_label_series_label = QLabel(self.base_setting_x)
+        self.bs_x_tick_label_series_label.setObjectName(u"bs_x_tick_label_series_label")
+
+        self.gridLayout_5.addWidget(self.bs_x_tick_label_series_label, 14, 0, 1, 1)
+
+        self.bs_x_label_color_btn = QToolButton(self.base_setting_x)
+        self.bs_x_label_color_btn.setObjectName(u"bs_x_label_color_btn")
+
+        self.gridLayout_5.addWidget(self.bs_x_label_color_btn, 4, 1, 1, 1)
+
+        self.bs_x_tick_color_btn = QToolButton(self.base_setting_x)
+        self.bs_x_tick_color_btn.setObjectName(u"bs_x_tick_color_btn")
+
+        self.gridLayout_5.addWidget(self.bs_x_tick_color_btn, 9, 1, 1, 1)
+
+        self.bs_x_tick_value_series_line = QLineEdit(self.base_setting_x)
+        self.bs_x_tick_value_series_line.setObjectName(u"bs_x_tick_value_series_line")
+
+        self.gridLayout_5.addWidget(self.bs_x_tick_value_series_line, 13, 1, 1, 1)
+
+        self.bs_x_label_color = QLabel(self.base_setting_x)
+        self.bs_x_label_color.setObjectName(u"bs_x_label_color")
+        self.bs_x_label_color.setMinimumSize(QSize(76, 0))
+
+        self.gridLayout_5.addWidget(self.bs_x_label_color, 4, 0, 1, 1)
+
+        self.label_27 = QLabel(self.base_setting_x)
+        self.label_27.setObjectName(u"label_27")
+
+        self.gridLayout_5.addWidget(self.label_27, 10, 0, 1, 1)
+
+        self.bs_x_show_top_ticks_check = QCheckBox(self.base_setting_x)
+        self.bs_x_show_top_ticks_check.setObjectName(u"bs_x_show_top_ticks_check")
+
+        self.gridLayout_5.addWidget(self.bs_x_show_top_ticks_check, 10, 1, 1, 1)
+
+
+        self.verticalLayout_4.addWidget(self.base_setting_x)
+
+        self.base_setting_y = QFrame(self.base_setting_group_box)
+        self.base_setting_y.setObjectName(u"base_setting_y")
+        self.base_setting_y.setFrameShape(QFrame.Shape.StyledPanel)
+        self.base_setting_y.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_6 = QGridLayout(self.base_setting_y)
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.label_16 = QLabel(self.base_setting_y)
+        self.label_16.setObjectName(u"label_16")
+        self.label_16.setMaximumSize(QSize(100, 16777215))
+
+        self.gridLayout_6.addWidget(self.label_16, 7, 0, 1, 1)
+
+        self.bs_y_tick_color_label = QLabel(self.base_setting_y)
+        self.bs_y_tick_color_label.setObjectName(u"bs_y_tick_color_label")
+
+        self.gridLayout_6.addWidget(self.bs_y_tick_color_label, 9, 0, 1, 1)
+
+        self.bs_y_tick_value_series_line = QLineEdit(self.base_setting_y)
+        self.bs_y_tick_value_series_line.setObjectName(u"bs_y_tick_value_series_line")
+
+        self.gridLayout_6.addWidget(self.bs_y_tick_value_series_line, 13, 2, 1, 1)
+
+        self.bs_y_tick_combo = QComboBox(self.base_setting_y)
+        self.bs_y_tick_combo.addItem("")
+        self.bs_y_tick_combo.addItem("")
+        self.bs_y_tick_combo.addItem("")
+        self.bs_y_tick_combo.setObjectName(u"bs_y_tick_combo")
+
+        self.gridLayout_6.addWidget(self.bs_y_tick_combo, 6, 2, 1, 1)
+
+        self.bs_y_label_color = QLabel(self.base_setting_y)
+        self.bs_y_label_color.setObjectName(u"bs_y_label_color")
+
+        self.gridLayout_6.addWidget(self.bs_y_label_color, 4, 0, 1, 1)
+
+        self.bs_y_slope = QLabel(self.base_setting_y)
+        self.bs_y_slope.setObjectName(u"bs_y_slope")
+
+        self.gridLayout_6.addWidget(self.bs_y_slope, 17, 0, 1, 1)
+
+        self.bs_y_tick_color_btn = QToolButton(self.base_setting_y)
+        self.bs_y_tick_color_btn.setObjectName(u"bs_y_tick_color_btn")
+
+        self.gridLayout_6.addWidget(self.bs_y_tick_color_btn, 9, 2, 1, 1)
+
+        self.bs_y_enable = QLabel(self.base_setting_y)
+        self.bs_y_enable.setObjectName(u"bs_y_enable")
+        self.bs_y_enable.setMaximumSize(QSize(100, 16777215))
+
+        self.gridLayout_6.addWidget(self.bs_y_enable, 1, 0, 1, 1)
+
+        self.bs_y_tick = QLabel(self.base_setting_y)
+        self.bs_y_tick.setObjectName(u"bs_y_tick")
+
+        self.gridLayout_6.addWidget(self.bs_y_tick, 6, 0, 1, 1)
+
+        self.bs_y_enable_check = QCheckBox(self.base_setting_y)
+        self.bs_y_enable_check.setObjectName(u"bs_y_enable_check")
+        self.bs_y_enable_check.setChecked(True)
+
+        self.gridLayout_6.addWidget(self.bs_y_enable_check, 1, 2, 1, 1)
+
+        self.frame_6 = QFrame(self.base_setting_y)
+        self.frame_6.setObjectName(u"frame_6")
+        self.frame_6.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_6.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_13 = QGridLayout(self.frame_6)
+        self.gridLayout_13.setObjectName(u"gridLayout_13")
+        self.gridLayout_13.setContentsMargins(0, 0, 0, 0)
+        self.bs_y_tick_range_min_spin = QSpinBox(self.frame_6)
+        self.bs_y_tick_range_min_spin.setObjectName(u"bs_y_tick_range_min_spin")
+        self.bs_y_tick_range_min_spin.setMinimum(-1000000)
+        self.bs_y_tick_range_min_spin.setMaximum(1000000)
+
+        self.gridLayout_13.addWidget(self.bs_y_tick_range_min_spin, 0, 0, 1, 1)
+
+        self.label_17 = QLabel(self.frame_6)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        self.gridLayout_13.addWidget(self.label_17, 0, 1, 1, 1)
+
+        self.bs_y_tick_range_max_spin = QSpinBox(self.frame_6)
+        self.bs_y_tick_range_max_spin.setObjectName(u"bs_y_tick_range_max_spin")
+        self.bs_y_tick_range_max_spin.setMaximum(1000000)
+        self.bs_y_tick_range_max_spin.setValue(0)
+
+        self.gridLayout_13.addWidget(self.bs_y_tick_range_max_spin, 0, 2, 1, 1)
+
+
+        self.gridLayout_6.addWidget(self.frame_6, 7, 2, 1, 1)
+
+        self.bs_y_title_edit_line = QLineEdit(self.base_setting_y)
+        self.bs_y_title_edit_line.setObjectName(u"bs_y_title_edit_line")
+
+        self.gridLayout_6.addWidget(self.bs_y_title_edit_line, 2, 2, 1, 1)
+
+        self.bs_y_tick_label_size_spin = QSpinBox(self.base_setting_y)
+        self.bs_y_tick_label_size_spin.setObjectName(u"bs_y_tick_label_size_spin")
+        self.bs_y_tick_label_size_spin.setValue(9)
+
+        self.gridLayout_6.addWidget(self.bs_y_tick_label_size_spin, 11, 2, 1, 1)
+
+        self.bs_y_tick_label_series_line = QLineEdit(self.base_setting_y)
+        self.bs_y_tick_label_series_line.setObjectName(u"bs_y_tick_label_series_line")
+
+        self.gridLayout_6.addWidget(self.bs_y_tick_label_series_line, 14, 2, 1, 1)
+
+        self.bs_y_tick_label_color_btn = QToolButton(self.base_setting_y)
+        self.bs_y_tick_label_color_btn.setObjectName(u"bs_y_tick_label_color_btn")
+
+        self.gridLayout_6.addWidget(self.bs_y_tick_label_color_btn, 12, 2, 1, 1)
+
+        self.label_19 = QLabel(self.base_setting_y)
+        self.label_19.setObjectName(u"label_19")
+
+        self.gridLayout_6.addWidget(self.label_19, 8, 0, 1, 1)
+
+        self.bs_y_bold_check = QCheckBox(self.base_setting_y)
+        self.bs_y_bold_check.setObjectName(u"bs_y_bold_check")
+
+        self.gridLayout_6.addWidget(self.bs_y_bold_check, 5, 2, 1, 1)
+
+        self.bs_y_tick_value_series_label = QLabel(self.base_setting_y)
+        self.bs_y_tick_value_series_label.setObjectName(u"bs_y_tick_value_series_label")
+
+        self.gridLayout_6.addWidget(self.bs_y_tick_value_series_label, 13, 0, 1, 1)
+
+        self.bs_y_minor_tick_label = QLabel(self.base_setting_y)
+        self.bs_y_minor_tick_label.setObjectName(u"bs_y_minor_tick_label")
+
+        self.gridLayout_6.addWidget(self.bs_y_minor_tick_label, 15, 0, 1, 1)
+
+        self.label_12 = QLabel(self.base_setting_y)
+        self.label_12.setObjectName(u"label_12")
+
+        self.gridLayout_6.addWidget(self.label_12, 11, 0, 1, 1)
+
+        self.bs_y_slope_dial = QDial(self.base_setting_y)
+        self.bs_y_slope_dial.setObjectName(u"bs_y_slope_dial")
+        self.bs_y_slope_dial.setMaximumSize(QSize(16777215, 16777215))
+        self.bs_y_slope_dial.setMaximum(360)
+
+        self.gridLayout_6.addWidget(self.bs_y_slope_dial, 17, 2, 1, 1)
+
+        self.bs_y_minor_tick_interval_label = QLabel(self.base_setting_y)
+        self.bs_y_minor_tick_interval_label.setObjectName(u"bs_y_minor_tick_interval_label")
+
+        self.gridLayout_6.addWidget(self.bs_y_minor_tick_interval_label, 16, 0, 1, 1)
+
+        self.bs_y_label_size_spin = QSpinBox(self.base_setting_y)
+        self.bs_y_label_size_spin.setObjectName(u"bs_y_label_size_spin")
+        self.bs_y_label_size_spin.setMinimum(1)
+        self.bs_y_label_size_spin.setValue(9)
+
+        self.gridLayout_6.addWidget(self.bs_y_label_size_spin, 3, 2, 1, 1)
+
+        self.bs_y_label = QLabel(self.base_setting_y)
+        self.bs_y_label.setObjectName(u"bs_y_label")
+        self.bs_y_label.setFont(font4)
+
+        self.gridLayout_6.addWidget(self.bs_y_label, 0, 0, 1, 1)
+
+        self.bs_y_bold = QLabel(self.base_setting_y)
+        self.bs_y_bold.setObjectName(u"bs_y_bold")
+        self.bs_y_bold.setMinimumSize(QSize(76, 0))
+
+        self.gridLayout_6.addWidget(self.bs_y_bold, 5, 0, 1, 1)
+
+        self.bs_y_label_size = QLabel(self.base_setting_y)
+        self.bs_y_label_size.setObjectName(u"bs_y_label_size")
+        self.bs_y_label_size.setMinimumSize(QSize(100, 0))
+
+        self.gridLayout_6.addWidget(self.bs_y_label_size, 3, 0, 1, 1)
+
+        self.bs_y_title = QLabel(self.base_setting_y)
+        self.bs_y_title.setObjectName(u"bs_y_title")
+        self.bs_y_title.setMinimumSize(QSize(100, 0))
+        self.bs_y_title.setMaximumSize(QSize(100, 16777215))
+
+        self.gridLayout_6.addWidget(self.bs_y_title, 2, 0, 1, 1)
+
+        self.bs_y_label_color_btn = QToolButton(self.base_setting_y)
+        self.bs_y_label_color_btn.setObjectName(u"bs_y_label_color_btn")
+
+        self.gridLayout_6.addWidget(self.bs_y_label_color_btn, 4, 2, 1, 1)
+
+        self.bs_y_tick_size_spin = QSpinBox(self.base_setting_y)
+        self.bs_y_tick_size_spin.setObjectName(u"bs_y_tick_size_spin")
+        self.bs_y_tick_size_spin.setValue(3)
+
+        self.gridLayout_6.addWidget(self.bs_y_tick_size_spin, 8, 2, 1, 1)
+
+        self.bs_y_tick_label_color_label = QLabel(self.base_setting_y)
+        self.bs_y_tick_label_color_label.setObjectName(u"bs_y_tick_label_color_label")
+
+        self.gridLayout_6.addWidget(self.bs_y_tick_label_color_label, 12, 0, 1, 1)
+
+        self.bs_y_minor_tick_check = QCheckBox(self.base_setting_y)
+        self.bs_y_minor_tick_check.setObjectName(u"bs_y_minor_tick_check")
+
+        self.gridLayout_6.addWidget(self.bs_y_minor_tick_check, 15, 2, 1, 1)
+
+        self.bs_y_tick_label_series_label = QLabel(self.base_setting_y)
+        self.bs_y_tick_label_series_label.setObjectName(u"bs_y_tick_label_series_label")
+
+        self.gridLayout_6.addWidget(self.bs_y_tick_label_series_label, 14, 0, 1, 1)
+
+        self.bs_y_minor_tick_interval_spin = QDoubleSpinBox(self.base_setting_y)
+        self.bs_y_minor_tick_interval_spin.setObjectName(u"bs_y_minor_tick_interval_spin")
+        self.bs_y_minor_tick_interval_spin.setEnabled(False)
+        self.bs_y_minor_tick_interval_spin.setMaximum(1000000.000000000000000)
+        self.bs_y_minor_tick_interval_spin.setSingleStep(0.010000000000000)
+        self.bs_y_minor_tick_interval_spin.setValue(1.000000000000000)
+
+        self.gridLayout_6.addWidget(self.bs_y_minor_tick_interval_spin, 16, 2, 1, 1)
+
+        self.label_28 = QLabel(self.base_setting_y)
+        self.label_28.setObjectName(u"label_28")
+
+        self.gridLayout_6.addWidget(self.label_28, 10, 0, 1, 1)
+
+        self.bs_y_show_right_ticks_check = QCheckBox(self.base_setting_y)
+        self.bs_y_show_right_ticks_check.setObjectName(u"bs_y_show_right_ticks_check")
+
+        self.gridLayout_6.addWidget(self.bs_y_show_right_ticks_check, 10, 2, 1, 1)
+
+
+        self.verticalLayout_4.addWidget(self.base_setting_y)
+
+        self.base_setting_title = QFrame(self.base_setting_group_box)
+        self.base_setting_title.setObjectName(u"base_setting_title")
+        self.base_setting_title.setFrameShape(QFrame.Shape.StyledPanel)
+        self.base_setting_title.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_7 = QGridLayout(self.base_setting_title)
+        self.gridLayout_7.setObjectName(u"gridLayout_7")
+        self.bs_t_label = QLabel(self.base_setting_title)
+        self.bs_t_label.setObjectName(u"bs_t_label")
+        self.bs_t_label.setFont(font4)
+
+        self.gridLayout_7.addWidget(self.bs_t_label, 0, 0, 1, 1)
+
+        self.bs_t_title = QLabel(self.base_setting_title)
+        self.bs_t_title.setObjectName(u"bs_t_title")
+        self.bs_t_title.setMinimumSize(QSize(110, 0))
+        self.bs_t_title.setMaximumSize(QSize(100, 16777215))
+        self.bs_t_title.setBaseSize(QSize(0, 0))
+        self.bs_t_title.setStyleSheet(u"margin-right: 16px;")
+
+        self.gridLayout_7.addWidget(self.bs_t_title, 1, 0, 1, 1)
+
+        self.bs_t_bold = QLabel(self.base_setting_title)
+        self.bs_t_bold.setObjectName(u"bs_t_bold")
+
+        self.gridLayout_7.addWidget(self.bs_t_bold, 4, 0, 1, 1)
+
+        self.bs_t_title_size = QLabel(self.base_setting_title)
+        self.bs_t_title_size.setObjectName(u"bs_t_title_size")
+        self.bs_t_title_size.setMinimumSize(QSize(100, 0))
+
+        self.gridLayout_7.addWidget(self.bs_t_title_size, 2, 0, 1, 1)
+
+        self.bs_t_pos = QLabel(self.base_setting_title)
+        self.bs_t_pos.setObjectName(u"bs_t_pos")
+
+        self.gridLayout_7.addWidget(self.bs_t_pos, 5, 0, 1, 1)
+
+        self.bs_t_title_color = QLabel(self.base_setting_title)
+        self.bs_t_title_color.setObjectName(u"bs_t_title_color")
+        self.bs_t_title_color.setMinimumSize(QSize(100, 0))
+
+        self.gridLayout_7.addWidget(self.bs_t_title_color, 3, 0, 1, 1)
+
+        self.bs_t_pos_combo = QComboBox(self.base_setting_title)
+        self.bs_t_pos_combo.addItem("")
+        self.bs_t_pos_combo.addItem("")
+        self.bs_t_pos_combo.addItem("")
+        self.bs_t_pos_combo.setObjectName(u"bs_t_pos_combo")
+
+        self.gridLayout_7.addWidget(self.bs_t_pos_combo, 5, 1, 1, 1)
+
+        self.bs_t_title_size_spin = QSpinBox(self.base_setting_title)
+        self.bs_t_title_size_spin.setObjectName(u"bs_t_title_size_spin")
+        self.bs_t_title_size_spin.setMinimum(1)
+        self.bs_t_title_size_spin.setValue(9)
+
+        self.gridLayout_7.addWidget(self.bs_t_title_size_spin, 2, 1, 1, 1)
+
+        self.bs_t_title_edit_line = QLineEdit(self.base_setting_title)
+        self.bs_t_title_edit_line.setObjectName(u"bs_t_title_edit_line")
+
+        self.gridLayout_7.addWidget(self.bs_t_title_edit_line, 1, 1, 1, 1)
+
+        self.bs_t_title_color_btn = QToolButton(self.base_setting_title)
+        self.bs_t_title_color_btn.setObjectName(u"bs_t_title_color_btn")
+
+        self.gridLayout_7.addWidget(self.bs_t_title_color_btn, 3, 1, 1, 1)
+
+        self.bs_t_bold_check = QCheckBox(self.base_setting_title)
+        self.bs_t_bold_check.setObjectName(u"bs_t_bold_check")
+
+        self.gridLayout_7.addWidget(self.bs_t_bold_check, 4, 1, 1, 1)
+
+
+        self.verticalLayout_4.addWidget(self.base_setting_title)
+
+        self.base_setting_legend = QFrame(self.base_setting_group_box)
+        self.base_setting_legend.setObjectName(u"base_setting_legend")
+        self.base_setting_legend.setFrameShape(QFrame.Shape.StyledPanel)
+        self.base_setting_legend.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_8 = QGridLayout(self.base_setting_legend)
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.bs_l_legend_frame_color_btn = QToolButton(self.base_setting_legend)
+        self.bs_l_legend_frame_color_btn.setObjectName(u"bs_l_legend_frame_color_btn")
+        self.bs_l_legend_frame_color_btn.setEnabled(False)
+
+        self.gridLayout_8.addWidget(self.bs_l_legend_frame_color_btn, 10, 1, 1, 1)
+
+        self.bs_l_legend_frame_check = QCheckBox(self.base_setting_legend)
+        self.bs_l_legend_frame_check.setObjectName(u"bs_l_legend_frame_check")
+
+        self.gridLayout_8.addWidget(self.bs_l_legend_frame_check, 9, 1, 1, 1)
+
+        self.bs_l_pos_combo = QComboBox(self.base_setting_legend)
+        self.bs_l_pos_combo.addItem("")
+        self.bs_l_pos_combo.addItem("")
+        self.bs_l_pos_combo.addItem("")
+        self.bs_l_pos_combo.addItem("")
+        self.bs_l_pos_combo.addItem("")
+        self.bs_l_pos_combo.addItem("")
+        self.bs_l_pos_combo.addItem("")
+        self.bs_l_pos_combo.addItem("")
+        self.bs_l_pos_combo.addItem("")
+        self.bs_l_pos_combo.addItem("")
+        self.bs_l_pos_combo.addItem("")
+        self.bs_l_pos_combo.setObjectName(u"bs_l_pos_combo")
+
+        self.gridLayout_8.addWidget(self.bs_l_pos_combo, 5, 1, 1, 1)
+
+        self.legend_title_label = QLabel(self.base_setting_legend)
+        self.legend_title_label.setObjectName(u"legend_title_label")
+
+        self.gridLayout_8.addWidget(self.legend_title_label, 2, 0, 1, 1)
+
+        self.bs_l_legend_col_spin = QSpinBox(self.base_setting_legend)
+        self.bs_l_legend_col_spin.setObjectName(u"bs_l_legend_col_spin")
+        self.bs_l_legend_col_spin.setMinimum(1)
+
+        self.gridLayout_8.addWidget(self.bs_l_legend_col_spin, 6, 1, 1, 1)
+
+        self.bs_l_legend_size_spin = QSpinBox(self.base_setting_legend)
+        self.bs_l_legend_size_spin.setObjectName(u"bs_l_legend_size_spin")
+        self.bs_l_legend_size_spin.setMinimum(1)
+        self.bs_l_legend_size_spin.setValue(9)
+
+        self.gridLayout_8.addWidget(self.bs_l_legend_size_spin, 4, 1, 1, 1)
+
+        self.label_8 = QLabel(self.base_setting_legend)
+        self.label_8.setObjectName(u"label_8")
+        self.label_8.setMinimumSize(QSize(100, 0))
+
+        self.gridLayout_8.addWidget(self.label_8, 3, 0, 1, 1)
+
+        self.label_4 = QLabel(self.base_setting_legend)
+        self.label_4.setObjectName(u"label_4")
+
+        self.gridLayout_8.addWidget(self.label_4, 8, 0, 1, 1)
+
+        self.label_6 = QLabel(self.base_setting_legend)
+        self.label_6.setObjectName(u"label_6")
+
+        self.gridLayout_8.addWidget(self.label_6, 10, 0, 1, 1)
+
+        self.bs_l_legend_transparent_slider = QSlider(self.base_setting_legend)
+        self.bs_l_legend_transparent_slider.setObjectName(u"bs_l_legend_transparent_slider")
+        self.bs_l_legend_transparent_slider.setEnabled(False)
+        self.bs_l_legend_transparent_slider.setMaximum(100)
+        self.bs_l_legend_transparent_slider.setValue(100)
+        self.bs_l_legend_transparent_slider.setOrientation(Qt.Orientation.Horizontal)
+
+        self.gridLayout_8.addWidget(self.bs_l_legend_transparent_slider, 12, 1, 1, 1)
+
+        self.bs_l_legend_text_color_btn = QToolButton(self.base_setting_legend)
+        self.bs_l_legend_text_color_btn.setObjectName(u"bs_l_legend_text_color_btn")
+
+        self.gridLayout_8.addWidget(self.bs_l_legend_text_color_btn, 8, 1, 1, 1)
+
+        self.bs_l_legend_text_size_spin = QSpinBox(self.base_setting_legend)
+        self.bs_l_legend_text_size_spin.setObjectName(u"bs_l_legend_text_size_spin")
+        self.bs_l_legend_text_size_spin.setMinimum(1)
+        self.bs_l_legend_text_size_spin.setValue(9)
+
+        self.gridLayout_8.addWidget(self.bs_l_legend_text_size_spin, 3, 1, 1, 1)
+
+        self.label_5 = QLabel(self.base_setting_legend)
+        self.label_5.setObjectName(u"label_5")
+
+        self.gridLayout_8.addWidget(self.label_5, 9, 0, 1, 1)
+
+        self.bs_l_label = QLabel(self.base_setting_legend)
+        self.bs_l_label.setObjectName(u"bs_l_label")
+        self.bs_l_label.setFont(font4)
+
+        self.gridLayout_8.addWidget(self.bs_l_label, 0, 0, 1, 1)
+
+        self.bs_l_legend_size = QLabel(self.base_setting_legend)
+        self.bs_l_legend_size.setObjectName(u"bs_l_legend_size")
+        self.bs_l_legend_size.setMinimumSize(QSize(100, 0))
+        self.bs_l_legend_size.setMaximumSize(QSize(100, 16777215))
+
+        self.gridLayout_8.addWidget(self.bs_l_legend_size, 4, 0, 1, 1)
+
+        self.bs_l_legend_bg_color_btn = QToolButton(self.base_setting_legend)
+        self.bs_l_legend_bg_color_btn.setObjectName(u"bs_l_legend_bg_color_btn")
+        self.bs_l_legend_bg_color_btn.setEnabled(False)
+
+        self.gridLayout_8.addWidget(self.bs_l_legend_bg_color_btn, 11, 1, 1, 1)
+
+        self.bs_l_legend_title_line = QLineEdit(self.base_setting_legend)
+        self.bs_l_legend_title_line.setObjectName(u"bs_l_legend_title_line")
+
+        self.gridLayout_8.addWidget(self.bs_l_legend_title_line, 2, 1, 1, 1)
+
+        self.label_2 = QLabel(self.base_setting_legend)
+        self.label_2.setObjectName(u"label_2")
+
+        self.gridLayout_8.addWidget(self.label_2, 6, 0, 1, 1)
+
+        self.label_3 = QLabel(self.base_setting_legend)
+        self.label_3.setObjectName(u"label_3")
+
+        self.gridLayout_8.addWidget(self.label_3, 11, 0, 1, 1)
+
+        self.bs_l_pos = QLabel(self.base_setting_legend)
+        self.bs_l_pos.setObjectName(u"bs_l_pos")
+        self.bs_l_pos.setMinimumSize(QSize(76, 0))
+
+        self.gridLayout_8.addWidget(self.bs_l_pos, 5, 0, 1, 1)
+
+        self.label_7 = QLabel(self.base_setting_legend)
+        self.label_7.setObjectName(u"label_7")
+        self.label_7.setMinimumSize(QSize(100, 0))
+
+        self.gridLayout_8.addWidget(self.label_7, 12, 0, 1, 1)
+
+        self.label_20 = QLabel(self.base_setting_legend)
+        self.label_20.setObjectName(u"label_20")
+
+        self.gridLayout_8.addWidget(self.label_20, 1, 0, 1, 1)
+
+        self.bs_l_legend_enabled_check = QCheckBox(self.base_setting_legend)
+        self.bs_l_legend_enabled_check.setObjectName(u"bs_l_legend_enabled_check")
+        self.bs_l_legend_enabled_check.setChecked(True)
+
+        self.gridLayout_8.addWidget(self.bs_l_legend_enabled_check, 1, 1, 1, 1)
+
+
+        self.verticalLayout_4.addWidget(self.base_setting_legend)
+
+        self.bs_setting_other = QFrame(self.base_setting_group_box)
+        self.bs_setting_other.setObjectName(u"bs_setting_other")
+        self.bs_setting_other.setFrameShape(QFrame.Shape.StyledPanel)
+        self.bs_setting_other.setFrameShadow(QFrame.Shadow.Raised)
+        self.gridLayout_9 = QGridLayout(self.bs_setting_other)
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.bs_o_border_combo = QComboBox(self.bs_setting_other)
+        self.bs_o_border_combo.addItem("")
+        self.bs_o_border_combo.addItem("")
+        self.bs_o_border_combo.addItem("")
+        self.bs_o_border_combo.addItem("")
+        self.bs_o_border_combo.addItem("")
+        self.bs_o_border_combo.addItem("")
+        self.bs_o_border_combo.addItem("")
+        self.bs_o_border_combo.addItem("")
+        self.bs_o_border_combo.setObjectName(u"bs_o_border_combo")
+        self.bs_o_border_combo.setMinimumSize(QSize(142, 0))
+
+        self.gridLayout_9.addWidget(self.bs_o_border_combo, 1, 1, 1, 1)
+
+        self.bs_o_border = QLabel(self.bs_setting_other)
+        self.bs_o_border.setObjectName(u"bs_o_border")
+        self.bs_o_border.setMinimumSize(QSize(110, 0))
+        self.bs_o_border.setMaximumSize(QSize(16777215, 16777215))
+
+        self.gridLayout_9.addWidget(self.bs_o_border, 1, 0, 1, 1)
+
+        self.bs_o_label = QLabel(self.bs_setting_other)
+        self.bs_o_label.setObjectName(u"bs_o_label")
+        self.bs_o_label.setFont(font4)
+
+        self.gridLayout_9.addWidget(self.bs_o_label, 0, 0, 1, 1)
+
+        self.bs_o_border_color_label = QLabel(self.bs_setting_other)
+        self.bs_o_border_color_label.setObjectName(u"bs_o_border_color_label")
+
+        self.gridLayout_9.addWidget(self.bs_o_border_color_label, 2, 0, 1, 1)
+
+        self.bs_o_border_color_btn = QToolButton(self.bs_setting_other)
+        self.bs_o_border_color_btn.setObjectName(u"bs_o_border_color_btn")
+
+        self.gridLayout_9.addWidget(self.bs_o_border_color_btn, 2, 1, 1, 1)
+
+
+        self.verticalLayout_4.addWidget(self.bs_setting_other)
+
+
+        self.verticalLayout_6.addWidget(self.base_setting_group_box)
+
+        self.toolsScrollArea.setWidget(self.toolsScrollAreaWidgetContents)
+
+        self.verticalLayout.addWidget(self.toolsScrollArea)
+
+        self.dockWidget.setWidget(self.dockWidgetContents)
+        MainWindow.addDockWidget(Qt.DockWidgetArea.RightDockWidgetArea, self.dockWidget)
+        self.toolBar = QToolBar(MainWindow)
+        self.toolBar.setObjectName(u"toolBar")
+        self.toolBar.setFont(font)
+        self.toolBar.setIconSize(QSize(32, 32))
+        MainWindow.addToolBar(Qt.ToolBarArea.TopToolBarArea, self.toolBar)
+        self.chart_layer_toolbar = QToolBar(MainWindow)
+        self.chart_layer_toolbar.setObjectName(u"chart_layer_toolbar")
+        self.chart_layer_toolbar.setIconSize(QSize(32, 32))
+        MainWindow.addToolBar(Qt.ToolBarArea.LeftToolBarArea, self.chart_layer_toolbar)
+        self.chart_toolbar = QToolBar(MainWindow)
+        self.chart_toolbar.setObjectName(u"chart_toolbar")
+        self.chart_toolbar.setIconSize(QSize(32, 32))
+        MainWindow.addToolBar(Qt.ToolBarArea.TopToolBarArea, self.chart_toolbar)
+
+        self.toolBar.addAction(self.actionNew)
+        self.toolBar.addAction(self.actionOpen)
+        self.toolBar.addAction(self.actionSave)
+        self.toolBar.addAction(self.actionImportData)
+        self.toolBar.addAction(self.actionExportData)
+        self.toolBar.addAction(self.actionExportImage)
+        self.toolBar.addAction(self.actionHelp)
+        self.chart_layer_toolbar.addAction(self.actionScatterLayer)
+        self.chart_layer_toolbar.addAction(self.actionLineLayer)
+        self.chart_layer_toolbar.addAction(self.actionStairsLayer)
+        self.chart_layer_toolbar.addAction(self.actionErrorLayer)
+        self.chart_layer_toolbar.addAction(self.actionDensityLayer)
+        self.chart_layer_toolbar.addAction(self.actionCDFLayer)
+        self.chart_layer_toolbar.addAction(self.actionRegressionLayer)
+        self.chart_layer_toolbar.addAction(self.actionFillBetweenLayer)
+        self.chart_layer_toolbar.addAction(self.actionSpanLayer)
+        self.chart_layer_toolbar.addAction(self.actionVHLineLayer)
+        self.chart_layer_toolbar.addAction(self.actionAnnotationLayer)
+        self.chart_layer_toolbar.addAction(self.actionTextLayer)
+        self.chart_toolbar.addAction(self.actionBarChart)
+        self.chart_toolbar.addAction(self.actionLineChart)
+        self.chart_toolbar.addAction(self.actionHBarChart)
+        self.chart_toolbar.addAction(self.actionScatterChart)
+        self.chart_toolbar.addAction(self.actionStackedAreaChart)
+        self.chart_toolbar.addAction(self.actionStemChart)
+        self.chart_toolbar.addAction(self.actionRadarChart)
+        self.chart_toolbar.addAction(self.actionHistgram)
+        self.chart_toolbar.addAction(self.actionPieChart)
+        self.chart_toolbar.addAction(self.actionPieChartWithBar)
+        self.chart_toolbar.addAction(self.actionBoxChart)
+        self.chart_toolbar.addAction(self.actionErrorChart)
+        self.chart_toolbar.addAction(self.actionViolinChart)
+        self.chart_toolbar.addAction(self.actionHeatmapChart)
+        self.chart_toolbar.addAction(self.actionEventChart)
+        self.chart_toolbar.addAction(self.actionAutoCorrelationChart)
+        self.chart_toolbar.addAction(self.actionStairsChart)
+        self.chart_toolbar.addAction(self.actionWordcloudChart)
+
+        self.retranslateUi(MainWindow)
+
+        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget_2.setCurrentIndex(12)
+
+
+        QMetaObject.connectSlotsByName(MainWindow)
+    # setupUi
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"HappyCharts", None))
+        self.actionNew.setText(QCoreApplication.translate("MainWindow", u"New", None))
+#if QT_CONFIG(tooltip)
+        self.actionNew.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">New</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionOpen.setText(QCoreApplication.translate("MainWindow", u"Open", None))
+#if QT_CONFIG(tooltip)
+        self.actionOpen.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Open</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionSave.setText(QCoreApplication.translate("MainWindow", u"Save", None))
+#if QT_CONFIG(tooltip)
+        self.actionSave.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Save</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionImportData.setText(QCoreApplication.translate("MainWindow", u"Import Data", None))
+#if QT_CONFIG(tooltip)
+        self.actionImportData.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Import Data</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionExportData.setText(QCoreApplication.translate("MainWindow", u"Export Data", None))
+#if QT_CONFIG(tooltip)
+        self.actionExportData.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Export Data</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionExportImage.setText(QCoreApplication.translate("MainWindow", u"Export Image", None))
+#if QT_CONFIG(tooltip)
+        self.actionExportImage.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Export Image</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionHelp.setText(QCoreApplication.translate("MainWindow", u"Help", None))
+#if QT_CONFIG(tooltip)
+        self.actionHelp.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Help</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionLineLayer.setText(QCoreApplication.translate("MainWindow", u"LineLayer", None))
+#if QT_CONFIG(tooltip)
+        self.actionLineLayer.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Line Layer</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionAnnotationLayer.setText(QCoreApplication.translate("MainWindow", u"AnnotationLayer", None))
+#if QT_CONFIG(tooltip)
+        self.actionAnnotationLayer.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Annotation Layer</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionCDFLayer.setText(QCoreApplication.translate("MainWindow", u"CDFLayer", None))
+#if QT_CONFIG(tooltip)
+        self.actionCDFLayer.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">CDF Layer</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionDensityLayer.setText(QCoreApplication.translate("MainWindow", u"DensityLayer", None))
+#if QT_CONFIG(tooltip)
+        self.actionDensityLayer.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Density Layer</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionErrorLayer.setText(QCoreApplication.translate("MainWindow", u"ErrorLayer", None))
+#if QT_CONFIG(tooltip)
+        self.actionErrorLayer.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Error Layer</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionFillBetweenLayer.setText(QCoreApplication.translate("MainWindow", u"FillBetweenLayer", None))
+#if QT_CONFIG(tooltip)
+        self.actionFillBetweenLayer.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">FillBetween Layer</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionRegressionLayer.setText(QCoreApplication.translate("MainWindow", u"RegressionLayer", None))
+#if QT_CONFIG(tooltip)
+        self.actionRegressionLayer.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Regression Layer</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionScatterLayer.setText(QCoreApplication.translate("MainWindow", u"ScatterLayer", None))
+#if QT_CONFIG(tooltip)
+        self.actionScatterLayer.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Scatter Layer</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionSpanLayer.setText(QCoreApplication.translate("MainWindow", u"SpanLayer", None))
+#if QT_CONFIG(tooltip)
+        self.actionSpanLayer.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Span Layer</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionStairsLayer.setText(QCoreApplication.translate("MainWindow", u"StairsLayer", None))
+#if QT_CONFIG(tooltip)
+        self.actionStairsLayer.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Stairs Layer</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionTextLayer.setText(QCoreApplication.translate("MainWindow", u"TextLayer", None))
+#if QT_CONFIG(tooltip)
+        self.actionTextLayer.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Text Layer</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionVHLineLayer.setText(QCoreApplication.translate("MainWindow", u"VHLineLayer", None))
+#if QT_CONFIG(tooltip)
+        self.actionVHLineLayer.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">VHLine Layer</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionBarChart.setText(QCoreApplication.translate("MainWindow", u"BarChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionBarChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Bar Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionLineChart.setText(QCoreApplication.translate("MainWindow", u"LineChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionLineChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Line Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionHBarChart.setText(QCoreApplication.translate("MainWindow", u"HBarChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionHBarChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">HBar Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionScatterChart.setText(QCoreApplication.translate("MainWindow", u"ScatterChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionScatterChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Scatter Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionStackedAreaChart.setText(QCoreApplication.translate("MainWindow", u"StackedAreaChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionStackedAreaChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Stacked Area Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionStemChart.setText(QCoreApplication.translate("MainWindow", u"StemChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionStemChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Stem Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionRadarChart.setText(QCoreApplication.translate("MainWindow", u"RadarChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionRadarChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Radar Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionHistgram.setText(QCoreApplication.translate("MainWindow", u"Histgram", None))
+#if QT_CONFIG(tooltip)
+        self.actionHistgram.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Histgram</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionPieChart.setText(QCoreApplication.translate("MainWindow", u"PieChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionPieChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Pie Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionPieChartWithBar.setText(QCoreApplication.translate("MainWindow", u"PieChartWithBar", None))
+#if QT_CONFIG(tooltip)
+        self.actionPieChartWithBar.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Pie Chart With Bar</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionBoxChart.setText(QCoreApplication.translate("MainWindow", u"BoxChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionBoxChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Box Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionErrorChart.setText(QCoreApplication.translate("MainWindow", u"ErrorChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionErrorChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Error Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionViolinChart.setText(QCoreApplication.translate("MainWindow", u"ViolinChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionViolinChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Violin Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionHeatmapChart.setText(QCoreApplication.translate("MainWindow", u"HeatmapChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionHeatmapChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Heatmap Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionEventChart.setText(QCoreApplication.translate("MainWindow", u"EventChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionEventChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Event Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionAutoCorrelationChart.setText(QCoreApplication.translate("MainWindow", u"AutoCorrelationChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionAutoCorrelationChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Auto Correlation Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionStairsChart.setText(QCoreApplication.translate("MainWindow", u"StairsChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionStairsChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Stairs Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.actionWordcloudChart.setText(QCoreApplication.translate("MainWindow", u"WordcloudChart", None))
+#if QT_CONFIG(tooltip)
+        self.actionWordcloudChart.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ff0000;\">Wordcloud Chart</span></p></body></html>", None))
+#endif // QT_CONFIG(tooltip)
+        self.groupBox.setTitle("")
+        self.add_layer_btn.setText(QCoreApplication.translate("MainWindow", u"Add Layer", None))
+        self.chart_type_label.setText(QCoreApplication.translate("MainWindow", u"BaseChartType", None))
+        self.chart_type_combo.setItemText(0, QCoreApplication.translate("MainWindow", u"BarChart", None))
+        self.chart_type_combo.setItemText(1, QCoreApplication.translate("MainWindow", u"LineChart", None))
+        self.chart_type_combo.setItemText(2, QCoreApplication.translate("MainWindow", u"HBarChart", None))
+        self.chart_type_combo.setItemText(3, QCoreApplication.translate("MainWindow", u"ScatterChart", None))
+        self.chart_type_combo.setItemText(4, QCoreApplication.translate("MainWindow", u"StackedAreaChart", None))
+        self.chart_type_combo.setItemText(5, QCoreApplication.translate("MainWindow", u"StemChart", None))
+        self.chart_type_combo.setItemText(6, QCoreApplication.translate("MainWindow", u"RadarChart", None))
+        self.chart_type_combo.setItemText(7, QCoreApplication.translate("MainWindow", u"Histgram", None))
+        self.chart_type_combo.setItemText(8, QCoreApplication.translate("MainWindow", u"PieChart", None))
+        self.chart_type_combo.setItemText(9, QCoreApplication.translate("MainWindow", u"PieChartWithBar", None))
+        self.chart_type_combo.setItemText(10, QCoreApplication.translate("MainWindow", u"BoxChart", None))
+        self.chart_type_combo.setItemText(11, QCoreApplication.translate("MainWindow", u"ErrorChart", None))
+        self.chart_type_combo.setItemText(12, QCoreApplication.translate("MainWindow", u"ViolinChart", None))
+        self.chart_type_combo.setItemText(13, QCoreApplication.translate("MainWindow", u"HeatmapChart", None))
+        self.chart_type_combo.setItemText(14, QCoreApplication.translate("MainWindow", u"EventChart", None))
+        self.chart_type_combo.setItemText(15, QCoreApplication.translate("MainWindow", u"AutoCorrelationChart", None))
+        self.chart_type_combo.setItemText(16, QCoreApplication.translate("MainWindow", u"StairsChart", None))
+        self.chart_type_combo.setItemText(17, QCoreApplication.translate("MainWindow", u"WordcloudChart", None))
+
+        self.dockWidget.setWindowTitle(QCoreApplication.translate("MainWindow", u"Chart Tools", None))
+        self.data_layout_group_box.setTitle(QCoreApplication.translate("MainWindow", u"Canvas Settings", None))
+        self.show_grid_label.setText(QCoreApplication.translate("MainWindow", u"ShowCanvasGrid", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"ShowX/YGridOnly", None))
+        self.grid_line_style_combo.setItemText(0, QCoreApplication.translate("MainWindow", u"-", None))
+        self.grid_line_style_combo.setItemText(1, QCoreApplication.translate("MainWindow", u"--", None))
+        self.grid_line_style_combo.setItemText(2, QCoreApplication.translate("MainWindow", u"-.", None))
+        self.grid_line_style_combo.setItemText(3, QCoreApplication.translate("MainWindow", u":", None))
+
+        self.chart_bg_color_label.setText(QCoreApplication.translate("MainWindow", u"ChartBgColor", None))
+        self.canvas_grid_check_box.setText("")
+        self.canvas_bg_color_btn.setText("")
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Width", None))
+        self.label_23.setText(QCoreApplication.translate("MainWindow", u"inch", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Height", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"inch", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"CanvasSize", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"GridLineStyle", None))
+        self.chart_bg_color_btn.setText("")
+        self.canvas_bg_color_label.setText(QCoreApplication.translate("MainWindow", u"CanvasBgColor", None))
+        self.grid_transparent_label.setText(QCoreApplication.translate("MainWindow", u"GridTransparency", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"GridColor", None))
+        self.grid_color_btn.setText("")
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"GridLineWidth", None))
+        self.label_26.setText(QCoreApplication.translate("MainWindow", u"DPI", None))
+        self.base_setting_group_box.setTitle(QCoreApplication.translate("MainWindow", u"Base Settings", None))
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"\u2014\u2014", None))
+        self.bs_x_bold_check.setText("")
+        self.label_14.setText(QCoreApplication.translate("MainWindow", u"TicksRange", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"TicksLabelSize", None))
+        self.bs_x_tick_label_color_btn.setText("")
+        self.bs_x_minor_tick_interval_label.setText(QCoreApplication.translate("MainWindow", u"MinorTicksInterval", None))
+        self.bs_x_minor_tick_check.setText("")
+        self.bs_x_tick_label_color_label.setText(QCoreApplication.translate("MainWindow", u"TicksLabelColor", None))
+        self.bs_x_bold.setText(QCoreApplication.translate("MainWindow", u"Bold", None))
+        self.bs_x_enable_check.setText("")
+        self.bs_x_tick_value_series_label.setText(QCoreApplication.translate("MainWindow", u"TicksValueSeries", None))
+        self.bs_x_minor_tick_label.setText(QCoreApplication.translate("MainWindow", u"MinorTicks", None))
+        self.bs_x_tick_combo.setItemText(0, QCoreApplication.translate("MainWindow", u"out", None))
+        self.bs_x_tick_combo.setItemText(1, QCoreApplication.translate("MainWindow", u"in", None))
+        self.bs_x_tick_combo.setItemText(2, QCoreApplication.translate("MainWindow", u"inout", None))
+
+        self.bs_x_title.setText(QCoreApplication.translate("MainWindow", u"Label", None))
+        self.bs_x_enable.setText(QCoreApplication.translate("MainWindow", u"Enabled", None))
+        self.bs_x_tick_color_label.setText(QCoreApplication.translate("MainWindow", u"TicksColor", None))
+        self.bs_x_label_size.setText(QCoreApplication.translate("MainWindow", u"LabelSize", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"TicksSize", None))
+        self.bs_x_slope.setText(QCoreApplication.translate("MainWindow", u"TicksLabelAngle", None))
+        self.bs_x_label.setText(QCoreApplication.translate("MainWindow", u"X Axis Settings", None))
+        self.bs_x_tick.setText(QCoreApplication.translate("MainWindow", u"TicksDirection", None))
+        self.bs_x_tick_label_series_label.setText(QCoreApplication.translate("MainWindow", u"TicksLabelSeries", None))
+        self.bs_x_label_color_btn.setText("")
+        self.bs_x_tick_color_btn.setText("")
+        self.bs_x_label_color.setText(QCoreApplication.translate("MainWindow", u"LabelColor", None))
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"ShowTopTicks", None))
+        self.bs_x_show_top_ticks_check.setText("")
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"TicksRange", None))
+        self.bs_y_tick_color_label.setText(QCoreApplication.translate("MainWindow", u"TicksColor", None))
+        self.bs_y_tick_combo.setItemText(0, QCoreApplication.translate("MainWindow", u"out", None))
+        self.bs_y_tick_combo.setItemText(1, QCoreApplication.translate("MainWindow", u"in", None))
+        self.bs_y_tick_combo.setItemText(2, QCoreApplication.translate("MainWindow", u"inout", None))
+
+        self.bs_y_label_color.setText(QCoreApplication.translate("MainWindow", u"LabelColor", None))
+        self.bs_y_slope.setText(QCoreApplication.translate("MainWindow", u"TicksLabelAngle", None))
+        self.bs_y_tick_color_btn.setText("")
+        self.bs_y_enable.setText(QCoreApplication.translate("MainWindow", u"Enabled", None))
+        self.bs_y_tick.setText(QCoreApplication.translate("MainWindow", u"TicksDirection", None))
+        self.bs_y_enable_check.setText("")
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"\u2014\u2014", None))
+        self.bs_y_tick_label_color_btn.setText("")
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"TicksSize", None))
+        self.bs_y_bold_check.setText("")
+        self.bs_y_tick_value_series_label.setText(QCoreApplication.translate("MainWindow", u"TicksValueSeries", None))
+        self.bs_y_minor_tick_label.setText(QCoreApplication.translate("MainWindow", u"MinorTicks", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"TicksLabelSize", None))
+        self.bs_y_minor_tick_interval_label.setText(QCoreApplication.translate("MainWindow", u"MinorTicksInterval", None))
+        self.bs_y_label.setText(QCoreApplication.translate("MainWindow", u"Y Axis Settings", None))
+        self.bs_y_bold.setText(QCoreApplication.translate("MainWindow", u"Bold", None))
+        self.bs_y_label_size.setText(QCoreApplication.translate("MainWindow", u"LabelSize", None))
+        self.bs_y_title.setText(QCoreApplication.translate("MainWindow", u"Label", None))
+        self.bs_y_label_color_btn.setText("")
+        self.bs_y_tick_label_color_label.setText(QCoreApplication.translate("MainWindow", u"TicksLabelColor", None))
+        self.bs_y_minor_tick_check.setText("")
+        self.bs_y_tick_label_series_label.setText(QCoreApplication.translate("MainWindow", u"TicksLabelSeries", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"ShowRightTicks", None))
+        self.bs_y_show_right_ticks_check.setText("")
+        self.bs_t_label.setText(QCoreApplication.translate("MainWindow", u"Title Settings", None))
+        self.bs_t_title.setText(QCoreApplication.translate("MainWindow", u"Title", None))
+        self.bs_t_bold.setText(QCoreApplication.translate("MainWindow", u"Bold", None))
+        self.bs_t_title_size.setText(QCoreApplication.translate("MainWindow", u"TitleSize", None))
+        self.bs_t_pos.setText(QCoreApplication.translate("MainWindow", u"TitlePosition", None))
+        self.bs_t_title_color.setText(QCoreApplication.translate("MainWindow", u"TitleColor", None))
+        self.bs_t_pos_combo.setItemText(0, QCoreApplication.translate("MainWindow", u"center", None))
+        self.bs_t_pos_combo.setItemText(1, QCoreApplication.translate("MainWindow", u"left", None))
+        self.bs_t_pos_combo.setItemText(2, QCoreApplication.translate("MainWindow", u"right", None))
+
+        self.bs_t_title_color_btn.setText("")
+        self.bs_t_bold_check.setText("")
+        self.bs_l_legend_frame_color_btn.setText("")
+        self.bs_l_legend_frame_check.setText("")
+        self.bs_l_pos_combo.setItemText(0, QCoreApplication.translate("MainWindow", u"best", None))
+        self.bs_l_pos_combo.setItemText(1, QCoreApplication.translate("MainWindow", u"upper right", None))
+        self.bs_l_pos_combo.setItemText(2, QCoreApplication.translate("MainWindow", u"upper left", None))
+        self.bs_l_pos_combo.setItemText(3, QCoreApplication.translate("MainWindow", u"lower left", None))
+        self.bs_l_pos_combo.setItemText(4, QCoreApplication.translate("MainWindow", u"lower right", None))
+        self.bs_l_pos_combo.setItemText(5, QCoreApplication.translate("MainWindow", u"right", None))
+        self.bs_l_pos_combo.setItemText(6, QCoreApplication.translate("MainWindow", u"center left", None))
+        self.bs_l_pos_combo.setItemText(7, QCoreApplication.translate("MainWindow", u"center right", None))
+        self.bs_l_pos_combo.setItemText(8, QCoreApplication.translate("MainWindow", u"lower center", None))
+        self.bs_l_pos_combo.setItemText(9, QCoreApplication.translate("MainWindow", u"upper center", None))
+        self.bs_l_pos_combo.setItemText(10, QCoreApplication.translate("MainWindow", u"center", None))
+
+        self.legend_title_label.setText(QCoreApplication.translate("MainWindow", u"LegendTitle", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"LegendTitleSize", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"LabelColor", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"LegendFrameColor", None))
+        self.bs_l_legend_text_color_btn.setText("")
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"LegendFrame", None))
+        self.bs_l_label.setText(QCoreApplication.translate("MainWindow", u"Legend Settings", None))
+        self.bs_l_legend_size.setText(QCoreApplication.translate("MainWindow", u"LegendTextSize", None))
+        self.bs_l_legend_bg_color_btn.setText("")
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Legend Columns", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"LegendBgColor", None))
+        self.bs_l_pos.setText(QCoreApplication.translate("MainWindow", u"LegendPosition", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"FrameTransparency", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Enabled", None))
+        self.bs_l_legend_enabled_check.setText("")
+        self.bs_o_border_combo.setItemText(0, QCoreApplication.translate("MainWindow", u"standard", None))
+        self.bs_o_border_combo.setItemText(1, QCoreApplication.translate("MainWindow", u"left bottom", None))
+        self.bs_o_border_combo.setItemText(2, QCoreApplication.translate("MainWindow", u"top right", None))
+        self.bs_o_border_combo.setItemText(3, QCoreApplication.translate("MainWindow", u"top", None))
+        self.bs_o_border_combo.setItemText(4, QCoreApplication.translate("MainWindow", u"bottom", None))
+        self.bs_o_border_combo.setItemText(5, QCoreApplication.translate("MainWindow", u"left", None))
+        self.bs_o_border_combo.setItemText(6, QCoreApplication.translate("MainWindow", u"right", None))
+        self.bs_o_border_combo.setItemText(7, QCoreApplication.translate("MainWindow", u"none", None))
+
+        self.bs_o_border.setText(QCoreApplication.translate("MainWindow", u"FrameStyle", None))
+        self.bs_o_label.setText(QCoreApplication.translate("MainWindow", u"Other Settings", None))
+        self.bs_o_border_color_label.setText(QCoreApplication.translate("MainWindow", u"FrameColor", None))
+        self.bs_o_border_color_btn.setText("")
+        self.toolBar.setWindowTitle(QCoreApplication.translate("MainWindow", u"Base ToolBar", None))
+        self.chart_layer_toolbar.setWindowTitle(QCoreApplication.translate("MainWindow", u"Chart Layer ToolBar", None))
+        self.chart_toolbar.setWindowTitle(QCoreApplication.translate("MainWindow", u"Chart ToolBar", None))
+    # retranslateUi
+

@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>323</width>
+    <height>692</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_38">
+       <property name="text">
+        <string>XDataSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="x_series_combo"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="y_series_label">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>YDataSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="y_series_combo">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_24">
+       <property name="text">
+        <string>DataLabelSeries</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="data_label_line">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Vertical</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QCheckBox" name="vertical_check">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_25">
+       <property name="text">
+        <string>Width</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QDoubleSpinBox" name="width_spin">
+       <property name="minimum">
+        <double>0.010000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>0.500000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_33">
+       <property name="text">
+        <string>points</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QSpinBox" name="points_spin">
+       <property name="minimum">
+        <number>10</number>
+       </property>
+       <property name="maximum">
+        <number>1000000</number>
+       </property>
+       <property name="value">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>BWMethod</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QComboBox" name="method_combo">
+       <item>
+        <property name="text">
+         <string>scott</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>silverman</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>Side</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QComboBox" name="side_combo">
+       <item>
+        <property name="text">
+         <string>both</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>low</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>high</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>BodyFaceColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QToolButton" name="body_face_color_btn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>BodyEdgeColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QToolButton" name="body_edge_color_btn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_43">
+       <property name="text">
+        <string>Transparency</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QSlider" name="transparency_slider">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="value">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>ShowMedianDot</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QCheckBox" name="median_dot_check">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>MedianMarker</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QComboBox" name="median_marker_combo">
+       <item>
+        <property name="text">
+         <string>.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>o</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>v</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>^</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>&lt;</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>&gt;</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>s</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>p</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>P</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>*</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>h</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>H</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>+</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>x</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>X</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>D</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>d</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>|</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>_</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>MedianColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="1">
+      <widget class="QToolButton" name="median_color_btn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>MedianSize</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="1">
+      <widget class="QDoubleSpinBox" name="median_size_spin">
+       <property name="minimum">
+        <double>0.010000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>100.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>30.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>QuartileLineStyle</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="1">
+      <widget class="QComboBox" name="quantile_linestyle_combo">
+       <item>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>--</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>-.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>:</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="16" column="0">
+      <widget class="QLabel" name="label_44">
+       <property name="text">
+        <string>QuartileLineColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="1">
+      <widget class="QToolButton" name="quantile_line_color_btn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>QuartileLineWidth</string>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="1">
+      <widget class="QDoubleSpinBox" name="quantile_linewidth_spin">
+       <property name="minimum">
+        <double>0.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>100.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>5.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="0">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>WhiskerLineStyle</string>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="1">
+      <widget class="QComboBox" name="whisker_linestyle_combo">
+       <item>
+        <property name="text">
+         <string>-</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>--</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>-.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>:</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="19" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>WhiskerLineColor</string>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="1">
+      <widget class="QToolButton" name="whisker_line_color_btn">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="0">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>WhiskerLineWidth</string>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="1">
+      <widget class="QDoubleSpinBox" name="whisker_line_width_spin">
+       <property name="minimum">
+        <double>0.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>100.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="value">
+        <double>1.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
